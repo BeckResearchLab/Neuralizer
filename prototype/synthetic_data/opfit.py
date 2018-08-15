@@ -94,7 +94,7 @@ def model_search(X_train,Y_train,X_test,Y_test
                                   metrics=[R_squared])
                     history = model.fit(X_train,Y_train,epochs=50, batch_size=10,validation_split=0.33)
                     scores = model.evaluate(X_test,Y_test)
-                    
+                    print(score)
                     iteration_n += iteration_n 
                     if scores[1]>best_R:
                         best_activation = parameter_list
