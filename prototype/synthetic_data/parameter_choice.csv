@@ -1,0 +1,18 @@
+,Parameters
+0,layer number
+1,layer type 
+2,different layer combination
+3,nodes number
+4,activation function
+5,kernel initializer
+6,bias initializer
+7,kernel regularizer
+8,bias regularizer
+9,kernel constraint
+10,biase constraint
+11,Dropout rate
+12,loss function
+13,metric
+14,optimizer and learning rate
+15,epochs
+16,batch_size
