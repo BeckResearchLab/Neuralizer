@@ -58,7 +58,7 @@ def make_pairwise_list(max_depth=2, options=['tanh', 'softmax', 'relu']):
         combinations.append(state)
     return combinations
 
-def model_search(X_train,Y_train,X_test,Y_test
+def model_search(X_train,Y_train,X_test,Y_test,
     input_dim,output_dim,layers,activation_functions=['tanh','softmax','linear']):
     iterations = len(activation_functions)**(layers + 2)
     inner_iterations = len(activation_functions)**layers
@@ -72,9 +72,10 @@ def model_search(X_train,Y_train,X_test,Y_test
     best_activation = []
     for inner_iteration in range(inner_iterations):
         for activation_in in activation_functions:
+            inner_list = []
+            for k in range(layers):
+                inner_list.append(af_combs[inner_iteration][k])
             for layer in range(layers):
-                inner_list = []
-                inner_list.append(af_combs[inner_iteration][layer])
                 for activation_out in activation_functions:
                     print(f"running iteration {iteration_n}")
                     parameter_list = []
@@ -86,7 +87,7 @@ def model_search(X_train,Y_train,X_test,Y_test
                     model = keras.Sequential()
                     model.add(keras.layers.Dense(10,input_dim = input_dim,activation=activation_in))
                     for i in range(len(inner_list)):
-                        print(f"create hidden layer {layer} of type {inner_list[i]}")
+                        print(f"create hidden layer {layer+1} of type {inner_list[i]}")
                         model.add(keras.layers.Dense(20,activation = inner_list[i]))
                     print(f"create output layer with activation of {activation_out}")
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
@@ -94,8 +95,8 @@ def model_search(X_train,Y_train,X_test,Y_test
                                   metrics=[R_squared])
                     history = model.fit(X_train,Y_train,epochs=50, batch_size=10,validation_split=0.33)
                     scores = model.evaluate(X_test,Y_test)
-                    print(score)
-                    iteration_n += iteration_n 
+                    print(scores[1])
+                    iteration_n += 1 
                     if scores[1]>best_R:
                         best_activation = parameter_list
                         best_R = scores[1]
@@ -106,7 +107,6 @@ def model_search(X_train,Y_train,X_test,Y_test
     print(best_R)
     
     return best_activation
-
  
 def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers,
                         activation_functions=['tanh', 'softmax', 'relu'],units=[5,10,20]):
@@ -123,10 +123,12 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
     best_activation = []
     for inner_iteration in range(inner_iterations):
         for option_in in options:
+            inner_list=[]
+            for k in range(layers):
+                inner_list.append(af_combs[inner_iteration][k])
             for layer in range(layers):
-                inner_list = []
-                inner_list.append(af_combs[inner_iteration][layer])
                 for activation_out in activation_functions:
+                    print(inner_list)
                     print(f"running iteration {iteration_n}")
                     parameter_list = []
                     parameter_list.append(option_in)
@@ -137,7 +139,7 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
                     model = keras.Sequential()
                     model.add(keras.layers.Dense(option_in[1],input_dim = input_dim,activation=option_in[0]))
                     for i in range(len(inner_list)):
-                        print(f"create hidden layer {layer} of activation {inner_list[i][0]} and units {inner_list[i][1]}")
+                        print(f"create hidden layer {i+1} of activation {inner_list[i][0]} and units {inner_list[i][1]}")
                         model.add(keras.layers.Dense(inner_list[i][1],activation = inner_list[i][0]))
                     print(f"create output layer with activation of {activation_out} and units of {output_dim}")
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
@@ -155,23 +157,21 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
         print("")
     print(best_param)
     print(best_R)
-    return best_param    
-def layer_search(hidden_layers=[1,3,5],X_train,Y_train,X_test,Y_test
-		 input_dim,output_dims
- 		 activation_functions,lr):
-    best_list1=[]
-    best_list2=[]
-    for layer_count in hidden_layers:
-         best_activation,best_lr = model_multi_search(X_train=X_train,
-						      Y_train=Y_train,
-				                      X_test=X_test,
-						      Y_test=Y_test,
-				 		      input_dim=input_dim,
-						      output_dims=output_dims,
-				 		      layers=layer_count,
-						      activation_functions=activationfunctions
-						      lr=lr)
-            					      
-	 best_list1.append(best_activation)
-	 best_list2.append(best_lr)    
+    return best_param
+
+def layer_search(X_train,Y_train,X_test,Y_test,
+                 input_dim,output_dims,
+                 activation_functions,units,hidden_layers=[1,3,5]):
+    best_list = []
     
+    for layer_count in hidden_layers:
+        best_param = model_multi_search(X_train=X_train,Y_train=Y_train,
+                                        X_test=X_test,Y_test=Y_test,
+                                        input_dim=input_dim,output_dim=output_dims,
+                                        layers=layer_count,
+                                        activation_functions=activation_functions,units=units)
+        best_list.append(best_param)
+        
+    print(best_list)
+    
+                                                          
