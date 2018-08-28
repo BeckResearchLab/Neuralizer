@@ -5,7 +5,7 @@ import os
 import sklearn
 from sklearn.model_selection import train_test_split
 import keras
-import keras.backened as K
+import keras.backend as K
 from keras import *
 
 def read_file(filename,X_var,Y_var):
