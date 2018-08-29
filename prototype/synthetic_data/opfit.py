@@ -134,7 +134,7 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
                     parameter_list.append(option_in)
                     parameter_list.extend(inner_list)
                     parameter_list.append(activation_out)
-                    print(f"create input layer with activation of {option_in[0]} and units of {option_in[1]}")
+                    #print(f"create input layer with activation of {option_in[0]} and units of {option_in[1]}")
                     
                     model = keras.Sequential()
                     model.add(keras.layers.Dense(option_in[1],input_dim = input_dim,activation=option_in[0]))
