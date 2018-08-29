@@ -88,7 +88,8 @@ def model_search(X_train,Y_train,X_test,Y_test,
                     model.add(keras.layers.Dense(10,input_dim = input_dim,activation=activation_in))
                     for i in range(len(inner_list)):
                         #print(f"create hidden layer {layer+1} of type {inner_list[i]}")
-                        model.add(keras.layers.Dense(20,activation = inner_list[i]))
+                        
+			model.add(keras.layers.Dense(20,activation = inner_list[i]))
                     #print(f"create output layer with activation of {activation_out}")
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
                     model.compile(loss='mean_squared_error', optimizer='adam', 
@@ -140,7 +141,8 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
                     model.add(keras.layers.Dense(option_in[1],input_dim = input_dim,activation=option_in[0]))
                     for i in range(len(inner_list)):
                         #print(f"create hidden layer {i+1} of activation {inner_list[i][0]} and units {inner_list[i][1]}")
-                        model.add(keras.layers.Dense(inner_list[i][1],activation = inner_list[i][0]))
+                        model.add(keras.layers.BatchNormalization(momentum=0.9))
+			model.add(keras.layers.Dense(inner_list[i][1],activation = inner_list[i][0]))
                     #print(f"create output layer with activation of {activation_out} and units of {output_dim}")
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
                     model.compile(loss='mean_squared_error', optimizer='adam', 
