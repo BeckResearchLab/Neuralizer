@@ -63,7 +63,7 @@ def model_search(X_train,Y_train,X_test,Y_test,
     iterations = len(activation_functions)**(layers + 2)
     inner_iterations = len(activation_functions)**layers
     af_combs = make_pairwise_list(max_depth=layers, options=activation_functions)
-    #print(f'{layers}\t{activation_functions}\t{iterations} iterations required')
+    print(f'{layers}\t{activation_functions}\t{iterations} iterations required')
     best_R = 0.0
     best_activation = []
     iteration_n = 1
@@ -77,20 +77,20 @@ def model_search(X_train,Y_train,X_test,Y_test,
                 inner_list.append(af_combs[inner_iteration][k])
             for layer in range(layers):
                 for activation_out in activation_functions:
-                    #print(f"running iteration {iteration_n}")
+                    print(f"running iteration {iteration_n}")
                     parameter_list = []
                     parameter_list.append(activation_in)
                     parameter_list.extend(inner_list)
                     parameter_list.append(activation_out)
-                    #print(f"create input layer with activation of {activation_in}")
+                    print(f"create input layer with activation of {activation_in}")
                     
                     model = keras.Sequential()
                     model.add(keras.layers.Dense(10,input_dim = input_dim,activation=activation_in))
                     for i in range(len(inner_list)):
-                        #print(f"create hidden layer {layer+1} of type {inner_list[i]}")
+                        print(f"create hidden layer {layer+1} of type {inner_list[i]}")
                         
 			model.add(keras.layers.Dense(20,activation = inner_list[i]))
-                    #print(f"create output layer with activation of {activation_out}")
+                    print(f"create output layer with activation of {activation_out}")
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
                     model.compile(loss='mean_squared_error', optimizer='adam', 
                                   metrics=[R_squared])
@@ -115,7 +115,7 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
     inner_iterations = (len(units)*len(activation_functions))**layers
     options= make_combo(option1=activation_functions,option2=units)
     af_combs = make_pairwise_list(max_depth=layers, options=options)
-    #print(f'{layers}\t{activation_functions}\t{iterations} iterations required')
+    print(f'{layers}\t{activation_functions}\t{iterations} iterations required')
     best_R = 0.0
     best_param = []
     iteration_n = 1
@@ -130,20 +130,20 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
             for layer in range(layers):
                 for activation_out in activation_functions:
                     print(inner_list)
-                    #print(f"running iteration {iteration_n}")
+                    print(f"running iteration {iteration_n}")
                     parameter_list = []
                     parameter_list.append(option_in)
                     parameter_list.extend(inner_list)
                     parameter_list.append(activation_out)
-                    #print(f"create input layer with activation of {option_in[0]} and units of {option_in[1]}")
+                    print(f"create input layer with activation of {option_in[0]} and units of {option_in[1]}")
                     
                     model = keras.Sequential()
                     model.add(keras.layers.Dense(option_in[1],input_dim = input_dim,activation=option_in[0]))
                     for i in range(len(inner_list)):
-                        #print(f"create hidden layer {i+1} of activation {inner_list[i][0]} and units {inner_list[i][1]}")
+                        print(f"create hidden layer {i+1} of activation {inner_list[i][0]} and units {inner_list[i][1]}")
                         model.add(keras.layers.BatchNormalization(momentum=0.9))
 			model.add(keras.layers.Dense(inner_list[i][1],activation = inner_list[i][0]))
-                    #print(f"create output layer with activation of {activation_out} and units of {output_dim}")
+                    print(f"create output layer with activation of {activation_out} and units of {output_dim}")
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
                     model.compile(loss='mean_squared_error', optimizer='adam', 
                                   metrics=[R_squared])
