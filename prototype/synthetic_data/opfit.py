@@ -8,6 +8,7 @@ import keras
 import keras.backend as K
 from keras import *
 
+
 def read_file(filename,X_var,Y_var):
     '''The function takes name of datafile, list of predictors and response'''
     ''' it returns array_like X and Y for data fitting'''
@@ -147,7 +148,8 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
                     model.compile(loss='mean_squared_error', optimizer='adam', 
                                   metrics=[R_squared])
-                    history = model.fit(X_train,Y_train,epochs=50, batch_size=10,validation_split=0.33)
+		    earlystop = keras.callbacks.EarlyStopping(monitor='val_acc',min_delta=0.0001,patience=20,mode='auto')
+                    history = model.fit(X_train,Y_train,epochs=50, batch_size=10,validation_split=0.2)
                     scores = model.evaluate(X_test,Y_test)
                     
                     iteration_n += 1 
