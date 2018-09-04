@@ -149,7 +149,7 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
                                   metrics=[R_squared])
                     earlystop = keras.callbacks.EarlyStopping(monitor='val_acc',min_delta=0.0001,patience=20,mode='auto')
                     callbacks_list = [earlystop]
-                    history = model.fit(X_train,Y_train,epochs=6000, batch_size=10,callbacks=callbacks_list,validation_split=0.2)
+                    history = model.fit(X_train,Y_train,epochs=300, batch_size=10,callbacks=callbacks_list,validation_split=0.2)
                     scores = model.evaluate(X_test,Y_test)
                     iteration_n += 1 
                     if scores[1]>best_R:
@@ -160,7 +160,7 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
         print("")
     print(best_param)
     print(best_R)
-    return best_param
+    return best_param,best_R
 
 def layer_search(X_train,Y_train,X_test,Y_test,
                  input_dim,output_dims,
