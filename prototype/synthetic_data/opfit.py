@@ -89,8 +89,8 @@ def model_search(X_train,Y_train,X_test,Y_test,
                     model.add(keras.layers.Dense(10,input_dim = input_dim,activation=activation_in))
                     for i in range(len(inner_list)):
                         print(f"create hidden layer {layer+1} of type {inner_list[i]}")
-                        
-			model.add(keras.layers.Dense(20,activation = inner_list[i]))
+                        model.add(keras.layers.Dense(20,activation=inner_list[i]))
+                    
                     print(f"create output layer with activation of {activation_out}")
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
                     model.compile(loss='mean_squared_error', optimizer='adam', 
@@ -137,22 +137,20 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
                     parameter_list.extend(inner_list)
                     parameter_list.append(activation_out)
                     print(f"create input layer with activation of {option_in[0]} and units of {option_in[1]}")
-                    
                     model = keras.Sequential()
                     model.add(keras.layers.Dense(option_in[1],input_dim = input_dim,activation=option_in[0]))
                     for i in range(len(inner_list)):
                         print(f"create hidden layer {i+1} of activation {inner_list[i][0]} and units {inner_list[i][1]}")
                         model.add(keras.layers.BatchNormalization(momentum=0.9))
-			model.add(keras.layers.Dense(inner_list[i][1],activation = inner_list[i][0]))
+                        model.add(keras.layers.Dense(inner_list[i][1],activation = inner_list[i][0]))
                     print(f"create output layer with activation of {activation_out} and units of {output_dim}")
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
                     model.compile(loss='mean_squared_error', optimizer='adam', 
                                   metrics=[R_squared])
-		    earlystop = keras.callbacks.EarlyStopping(monitor='val_acc',min_delta=0.0001,patience=20,mode='auto')
+                    earlystop = keras.callbacks.EarlyStopping(monitor='val_acc',min_delta=0.0001,patience=20,mode='auto')
                     callbacks_list = [earlystop]
                     history = model.fit(X_train,Y_train,epochs=6000, batch_size=10,callbacks=callbacks_list,validation_split=0.2)
                     scores = model.evaluate(X_test,Y_test)
-                    
                     iteration_n += 1 
                     if scores[1]>best_R:
                         best_param = parameter_list
