@@ -147,19 +147,22 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
                     model.compile(loss='mean_squared_error', optimizer='adam', 
                                   metrics=[R_squared])
-                    earlystop = keras.callbacks.EarlyStopping(monitor='val_acc',min_delta=0.0001,patience=20,mode='auto')
+                    earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
                     callbacks_list = [earlystop]
                     start = time.time()
-                    history = model.fit(X_train,Y_train,epochs=300, batch_size=10,callbacks=callbacks_list,validation_split=0.2)
+                    history = model.fit(X_train,Y_train,epochs=300, batch_size=10,callbacks=callbacks_list,validation_split=0.2,verbose=0)
                     end = time.time()
-                    scores = model.evaluate(X_test,Y_test)
+                    scores = model.evaluate(X_test,Y_test,verbose=0)
                     iteration_n += 1 
+                    f = open("Results%d.txt"%(layers),"w+")
+                    f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
                     if scores[1]>best_R:
                         best_param = parameter_list
                         best_R = scores[1]
                     else:
                         pass
         print("")
+    f.close()
     print(best_param)
     print(best_R)
     print('model took %0.2f seconds to train'%(end-start))
@@ -179,5 +182,5 @@ def layer_search(X_train,Y_train,X_test,Y_test,
         best_list.append(best_param)
         
     print(best_list)
-    
+    return best_list
                                                           
