@@ -154,7 +154,10 @@ def model_multi_search(X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers
                     end = time.time()
                     scores = model.evaluate(X_test,Y_test,verbose=0)
                     iteration_n += 1 
-                    f = open("Results%d.txt"%(layers),"w+")
+                    if not os.path.exits("Results%d.txt"%(layers)):
+                        f = open("Results%d.txt"%(layers),"w+")
+                    else:
+                        f = open(Results%d.txt"%(layers),"a+")
                     f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
                     if scores[1]>best_R:
                         best_param = parameter_list
