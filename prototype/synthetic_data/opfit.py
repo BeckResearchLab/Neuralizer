@@ -213,7 +213,7 @@ def model_multi_search_new(X_train,Y_train,X_test,Y_test,input_dim,output_dim,la
                     output_folder = './intermediate_output'
                     if not os.path.exists(output_folder):
                         os.makedirs(output_folder)
-                    filepath=outputFolder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
+                    filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
                     checkpoint = keras.callbacks.ModelCheckpoint(filepath, monitor='val_R_squared', verbose=1, save_best_only=False, save_weights_only=True, mode='auto', period=10)
                     callbacks_list = [earlystop,checkpoint]
                     start = time.time()
