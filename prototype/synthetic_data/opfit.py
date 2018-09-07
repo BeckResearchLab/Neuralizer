@@ -210,7 +210,7 @@ def model_multi_search_new(X_train,Y_train,X_test,Y_test,input_dim,output_dim,la
                     model.compile(loss='mean_squared_error', optimizer='adam',
                                   metrics=[R_squared])
                     earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
-                    output_folder = './intermediate_output%d'%(layers)
+                    output_folder = './intermediate_output%d'%(iteration_n)
                     if not os.path.exists(output_folder):
                         os.makedirs(output_folder)
                     filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
