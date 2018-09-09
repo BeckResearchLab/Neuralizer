@@ -8,7 +8,7 @@ import keras
 import keras.backend as K
 import time
 from keras import *
-
+import glob
 
 def read_file(filename,X_var,Y_var):
     '''The function takes name of datafile, list of predictors and response'''
@@ -210,10 +210,13 @@ def model_multi_search_new(X_train,Y_train,X_test,Y_test,input_dim,output_dim,la
                     model.compile(loss='mean_squared_error', optimizer='adam',
                                   metrics=[R_squared])
                     earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
+                    collection_folder = './collection'
+                    if not os.path.exists(collection_folder):
+                        os.makedirs(collection_folder)
                     output_folder = './intermediate_output%d'%(iteration_n)
                     if not os.path.exists(output_folder):
                         os.makedirs(output_folder)
-                    filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
+                    filepath=collection_folder+output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
                     checkpoint = keras.callbacks.ModelCheckpoint(filepath, monitor='val_R_squared', verbose=1, save_best_only=False, save_weights_only=True, mode='auto', period=10)
                     callbacks_list = [earlystop,checkpoint]
                     start = time.time()
@@ -232,12 +235,58 @@ def model_multi_search_new(X_train,Y_train,X_test,Y_test,input_dim,output_dim,la
                         best_R = scores[1]
                     else:
                         pass
+                    f.write("The best_R for now is %0.2f" % (best_R))
         print("")
     f.close()
     print(best_param)
     print(best_R)
     print('model took %0.2f seconds to train'%(cumulative_time))
     return best_param,best_R
+
+def continue_model_Search(epoch_num,starting_n):
+    iterations = (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
+    inner_iterations = (len(units)*len(activation_functions))**layers
+    options= make_combo(option1=activation_functions,option2=units)
+    af_combs = make_pairwise_list(max_depth=layers, options=options)
+    print(f'{layers}\t{activation_functions}\t{iterations} iterations required')
+    best_R = 0.0 
+    best_param = []
+    iteration_n = 1
+    cumulative_time = 0.0
+    for n in range(layers):
+        best_param.append(['none','none'])
+    best_activation = []
+    for inner_iteration in range(inner_iterations):
+        for option_in in options:
+            inner_list=[]
+            for k in range(layers):
+                inner_list.append(af_combs[inner_iteration][k])
+            for layer in range(layers):
+                for activation_out in activation_functions:
+                    if not (iteration_n > starting_n and epoch > starting_epoch):
+                        iteration_n += 1
+                        pass
+                    else:
+                        print(inner_list)
+                        print(f"running iteration {iteration_n}")
+                        parameter_list = []
+                        parameter_list.append(option_in)
+                        parameter_list.extend(inner_list)
+                        parameter_list.append(activation_out)
+                        print(f"create input layer with activation of {option_in[0]} and units of {option_in[1]}")
+                        model = keras.Sequential()
+                        model.add(keras.layers.Dense(option_in[1],input_dim = input_dim,activation=option_in[0]))
+                        for i in range(len(inner_list)):
+                            print(f"create hidden layer {i+1} of activation {inner_list[i][0]} and units {inner_list[i][1]}")
+                            model.add(keras.layers.BatchNormalization(momentum=0.9))
+                            model.add(keras.layers.Dense(inner_list[i][1],activation = inner_list[i][0]))
+                        print(f"create output layer with activation of {activation_out} and units of {output_dim}")
+                        model.add(keras.layers.Dense(output_dim,activation=activation_out))
+                        model.compile(loss='mean_squared_error', optimizer='adam',
+                                  metrics=[R_squared])
+                        earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
+                         
+    
 
 def layer_search(X_train,Y_train,X_test,Y_test,
                  input_dim,output_dims,
