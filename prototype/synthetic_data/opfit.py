@@ -272,10 +272,8 @@ def model_creation_run_two():
     filepath=collection_folder+output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
     checkpoint = keras.callbacks.ModelCheckpoint(filepath, monitor='val_R_squared', verbose=1, save_best_only=False, save_weights_only=True, mode='auto', period=10)
     callbacks_list = [earlystop,checkpoint]
-    start = time.time()
-    history = model.fit(X_train,Y_train,epochs=300, batch_size=10,callbacks=callbacks_list,validation_split=0.2,verbose=0)
-    end = time.time()
-    cumulative_time += (end-start)
+
+def model_creation_run_three()
     scores = model.evaluate(X_test,Y_test,verbose=0)
     iteration_n += 1
     if not os.path.exists("Results%d.txt"%(layers)):
@@ -291,7 +289,8 @@ def model_creation_run_two():
     f.write("The best_R for now is %0.2f" % (best_R))
 
 
-def continue_model_Search(epoch_num,starting_n):
+def continue_model_search(epoch_num,starting_n,X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers,
+                        activation_functions=['tanh', 'softmax', 'relu'],units=[5,10,20]):
     iterations = (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
     inner_iterations = (len(units)*len(activation_functions))**layers
     options= make_combo(option1=activation_functions,option2=units)
@@ -313,30 +312,39 @@ def continue_model_Search(epoch_num,starting_n):
             for layer in range(layers):
                 for activation_out in activation_functions:
                     if run_once == 1:
-                       model_creation_run_common()
-                    if not (iteration_n > starting_n)
-                        iteration_n += 1
-                        pass
+                       model_creation_run_one()
+                       model_creation_run_two()
+                       start = time.time()
+                       history = model.fit(X_train,Y_train,epochs=300, batch_size=10,callbacks=callbacks_list,validation_split=0.2,verbose=0)
+                       end = time.time()  
+                       cumulative_time += (end-start)
+                       model_creation_run_three()
                     else:
-                        print(inner_list)
-                        print(f"running iteration {iteration_n}")
-                        parameter_list = []
-                        parameter_list.append(option_in)
-                        parameter_list.extend(inner_list)
-                        parameter_list.append(activation_out)
-                        print(f"create input layer with activation of {option_in[0]} and units of {option_in[1]}")
-                        model = keras.Sequential()
-                        model.add(keras.layers.Dense(option_in[1],input_dim = input_dim,activation=option_in[0]))
-                        for i in range(len(inner_list)):
-                            print(f"create hidden layer {i+1} of activation {inner_list[i][0]} and units {inner_list[i][1]}")
-                            model.add(keras.layers.BatchNormalization(momentum=0.9))
-                            model.add(keras.layers.Dense(inner_list[i][1],activation = inner_list[i][0]))
-                        print(f"create output layer with activation of {activation_out} and units of {output_dim}")
-                        model.add(keras.layers.Dense(output_dim,activation=activation_out))
-                        model.compile(loss='mean_squared_error', optimizer='adam',
-                                  metrics=[R_squared])
-                        earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
-                         
+                        if not (iteration_n > starting_n)
+                            iteration_n += 1
+                            pass
+                        else:
+                            model_creation_run_one()
+                            output_folder = './intermediate_output%d' % (iteration_n)
+                            file_ini = output_folder+'weights-'+str(epoch_num)+'*'
+                            filename = glob.glob(file_ini)
+                            if os.path.isfile(filename[0]):
+                                model.load_weights(filename[0])
+                            else:
+                                print("%s does not exists" % (filename[0])
+                            model_creation_two()
+                            start = time.time()
+                            history = model.fit(X_train,Y_train,epochs=300,batch_size=10,callbacks=callbacks_list,validation_split=0.2,initial_epoch=epoch_num+1)
+                            end = time.time()
+                            cumulative_time += (end-start)
+                            model_creation_run_three()
+                            run_once = 1
+                            print("")
+    f.close()
+    print(best_param)
+    print(best_R)
+    print('model took %0.2f seconds to train'%(cumulative_time))
+    return best_param,best_R
     
 
 def layer_search(X_train,Y_train,X_test,Y_test,
