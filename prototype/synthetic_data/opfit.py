@@ -273,7 +273,7 @@ def model_creation_run_two(earlystop,iteration_n):
     callbacks_list = [earlystop,checkpoint]
     return callbacks_list
 
-def model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,layers,best_R):
+def model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,layers,best_R,best_param):
     scores = model.evaluate(X_test,Y_test,verbose=0)
     iteration_n += 1
     if not os.path.exists("Results%d.txt"%(layers)):
@@ -320,7 +320,7 @@ def continue_model_search(epoch_num,starting_n,X_train,Y_train,X_test,Y_test,inp
                        history = model.fit(X_train,Y_train,epochs=300, batch_size=10,callbacks=callbacks_list,validation_split=0.2,verbose=0)
                        end = time.time()  
                        cumulative_time += (end-start)
-                       best_param,best_R = model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,layers,best_R)
+                       best_param,best_R = model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,layers,best_R,best_param)
                     else:
                         if not (iteration_n > starting_n):
                             iteration_n += 1
@@ -342,7 +342,7 @@ def continue_model_search(epoch_num,starting_n,X_train,Y_train,X_test,Y_test,inp
                             history = model.fit(X_train,Y_train,epochs=300,batch_size=10,callbacks=callbacks_list,validation_split=0.2,initial_epoch=epoch_num+1)
                             end = time.time()
                             cumulative_time += (end-start)
-                            best_param,best_R = model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,layers,best_R)
+                            best_param,best_R = model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,layers,best_R,best_param)
                             run_once = 1
                             print("")
     f.close()
