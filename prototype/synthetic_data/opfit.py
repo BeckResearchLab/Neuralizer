@@ -344,8 +344,9 @@ def continue_model_search(epoch_num,starting_n,X_train,Y_train,X_test,Y_test,inp
                             cumulative_time += (end-start)
                             best_param,best_R = model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,layers,best_R,best_param)
                             run_once = 1
+                            iteration_n += 1
                             print("")
-    
+                               
     print(best_param)
     print(best_R)
     print('model took %0.2f seconds to train'%(cumulative_time))
