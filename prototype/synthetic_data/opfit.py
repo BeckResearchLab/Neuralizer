@@ -213,10 +213,10 @@ def model_multi_search_new(X_train,Y_train,X_test,Y_test,input_dim,output_dim,la
                     collection_folder = './collection'
                     if not os.path.exists(collection_folder):
                         os.makedirs(collection_folder)
-                    output_folder = './intermediate_output%d'%(iteration_n)
+                    output_folder = './collection/intermediate_output%d'%(iteration_n)
                     if not os.path.exists(output_folder):
                         os.makedirs(output_folder)
-                    filepath=collection_folder+output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
+                    filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
                     checkpoint = keras.callbacks.ModelCheckpoint(filepath, monitor='val_R_squared', verbose=1, save_best_only=False, save_weights_only=True, mode='auto', period=10)
                     callbacks_list = [earlystop,checkpoint]
                     start = time.time()
@@ -266,14 +266,14 @@ def model_creation_run_two():
     collection_folder = './collection'
     if not os.path.exists(collection_folder):
         os.makedirs(collection_folder)
-    output_folder = './intermediate_output%d'%(iteration_n)
+    output_folder = './collection/intermediate_output%d'%(iteration_n)
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
-    filepath=collection_folder+output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
+    filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
     checkpoint = keras.callbacks.ModelCheckpoint(filepath, monitor='val_R_squared', verbose=1, save_best_only=False, save_weights_only=True, mode='auto', period=10)
     callbacks_list = [earlystop,checkpoint]
 
-def model_creation_run_three()
+def model_creation_run_three():
     scores = model.evaluate(X_test,Y_test,verbose=0)
     iteration_n += 1
     if not os.path.exists("Results%d.txt"%(layers)):
@@ -320,7 +320,7 @@ def continue_model_search(epoch_num,starting_n,X_train,Y_train,X_test,Y_test,inp
                        cumulative_time += (end-start)
                        model_creation_run_three()
                     else:
-                        if not (iteration_n > starting_n)
+                        if not (iteration_n > starting_n):
                             iteration_n += 1
                             pass
                         else:
@@ -331,8 +331,8 @@ def continue_model_search(epoch_num,starting_n,X_train,Y_train,X_test,Y_test,inp
                             if os.path.isfile(filename[0]):
                                 model.load_weights(filename[0])
                             else:
-                                print("%s does not exists" % (filename[0])
-                            model_creation_two()
+                                print("%s does not exists" % (filename[0]))
+                            model_creation_run_two()
                             start = time.time()
                             history = model.fit(X_train,Y_train,epochs=300,batch_size=10,callbacks=callbacks_list,validation_split=0.2,initial_epoch=epoch_num+1)
                             end = time.time()
