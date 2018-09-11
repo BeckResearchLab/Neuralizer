@@ -289,15 +289,13 @@ def model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,laye
     f.write("The best_R for now is %0.2f" % (best_R))
     return best_param,best_R
 
-def continue_model_search(epoch_num,starting_n,best_R,X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers,cumulative_time,
+def continue_model_search(epoch_num,starting_n,best_R,best_param,X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers,cumulative_time,
                         activation_functions=['tanh', 'softmax', 'relu'],units=[5,10,20]):
     iterations = (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
     inner_iterations = (len(units)*len(activation_functions))**layers
     options= make_combo(option1=activation_functions,option2=units)
     af_combs = make_pairwise_list(max_depth=layers, options=options)
     print(f'{layers}\t{activation_functions}\t{iterations} iterations required')
-    best_R = 0.0 
-    best_param = []
     iteration_n = 1
     run_once = 0
     for n in range(layers):
