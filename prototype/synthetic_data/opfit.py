@@ -290,7 +290,7 @@ def model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,laye
     return best_param,best_R
 
 def continue_model_search(epoch_num,starting_n,X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers,
-                        activation_functions=['tanh', 'softmax', 'relu'],units=[5,10,20]):
+                        activation_functions=['tanh', 'softmax', 'relu'],units=[5,10,20],cumulative_time):
     iterations = (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
     inner_iterations = (len(units)*len(activation_functions))**layers
     options= make_combo(option1=activation_functions,option2=units)
@@ -299,7 +299,6 @@ def continue_model_search(epoch_num,starting_n,X_train,Y_train,X_test,Y_test,inp
     best_R = 0.0 
     best_param = []
     iteration_n = 1
-    cumulative_time = 0.0
     run_once = 0
     for n in range(layers):
         best_param.append(['none','none'])
@@ -321,6 +320,7 @@ def continue_model_search(epoch_num,starting_n,X_train,Y_train,X_test,Y_test,inp
                        end = time.time()  
                        cumulative_time += (end-start)
                        best_param,best_R = model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,layers,best_R,best_param)
+                       iteration_n += 1
                     else:
                         if not (iteration_n > starting_n):
                             iteration_n += 1
