@@ -348,15 +348,24 @@ def layer_search(X_train,Y_train,X_test,Y_test,
                  input_dim,output_dims,
                  activation_functions,units,hidden_layers=[1,3,5]):
     best_list = []
-    
+    best_R_list = []
     for layer_count in hidden_layers:
-        best_param = model_multi_search(X_train=X_train,Y_train=Y_train,
+        best_param,best_R = model_multi_search_new(X_train=X_train,Y_train=Y_train,
                                         X_test=X_test,Y_test=Y_test,
                                         input_dim=input_dim,output_dim=output_dims,
                                         layers=layer_count,
                                         activation_functions=activation_functions,units=units)
+        print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layer_count,best_R))
         best_list.append(best_param)
-        
-    print(best_list)
-    return best_list
+        best_R_list.append(best_R)
+    print(best_list,best_R_list)
+    max_R = best_R_list[0]
+    max_param = best_list[0]
+    for i in range(len(best_R_list)-1):
+        if best_R_list[i+1] > best_R_list[i]:
+            max_R = best_R_list[i+1]
+            max_param = best_list[i+1]
+        else:
+            pass
+    return max_R,max_param
                                                           
