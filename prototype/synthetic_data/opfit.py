@@ -1,37 +1,44 @@
 # Importing necessary package
-import pandas as pd
-import numpy as np
+import glob
 import os
+import time
+
+import keras
+from keras import *
+import keras.backend as K
+import numpy as np
+import pandas as pd
 import sklearn
 from sklearn.model_selection import train_test_split
-import keras
-import keras.backend as K
-import time
-from keras import *
-import glob
 
-def read_file(filename,X_var,Y_var):
-    '''The function takes name of datafile, list of predictors and response'''
-    ''' it returns array_like X and Y for data fitting'''
+
+def read_file(filename, X_var, Y_var):
+    """
+    The function takes name of datafile, list of predictors and response
+    it returns array_like X and Y for data fitting
+    """
     location = os.path.abspath(filename)
     df = pd.read_csv('%s'%location,sep='\t')
     X = np.array(df[X_var].values)
     Y = np.array(df[Y_var].values)
     return X,Y
 
-def split_train_test(X,Y,test_fraction,random_state):
-    '''This function takes X,Y,test_fraction and random_state number'''
-    '''It returns training and test sets with desired seperated size'''
+def split_train_test(X, Y, test_fraction, random_state):
+    """
+    This function takes X,Y,test_fraction and random_state number
+    It returns training and test sets with desired seperated size
+    """
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_fraction, random_state=random_state)
     return X_train, X_test, Y_train, Y_test
 
 
-def R_squared(y_true,y_pred):
+def R_squared(y_true, y_pred):
     u = K.sum(K.square(y_true - y_pred))
     v = K.sum(K.square(y_true - K.mean(y_true)))
     return (1 - u/(v + K.epsilon()))
 
-def make_combo(option1=['tanh','relu','linear'],option2=['0.1','0.01','0.001']):
+def make_combo(option1=['tanh','relu','linear'], 
+                option2=['0.1','0.01','0.001']):
     parameter_combo = []
     for i in option1:
         for j in option2:
@@ -60,8 +67,8 @@ def make_pairwise_list(max_depth=2, options=['tanh', 'softmax', 'relu']):
         combinations.append(state)
     return combinations
 
-def model_search(X_train,Y_train,X_test,Y_test,
-    input_dim,output_dim,layers,activation_functions=['tanh','softmax','linear']):
+def model_search(X_train, Y_train, X_test, Y_test, input_dim, output_dim,
+                    layers,activation_functions=['tanh','softmax','linear']):
     iterations = len(activation_functions)**(layers + 2)
     inner_iterations = len(activation_functions)**layers
     af_combs = make_pairwise_list(max_depth=layers, options=activation_functions)
@@ -285,8 +292,11 @@ def model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,laye
     f.write("The best_R for now is %0.4f and combination is %s "% (best_R,best_param))
     return best_param,best_R
 
-def continue_model_search(epoch_num,starting_n,best_R,best_param,X_train,Y_train,X_test,Y_test,input_dim,output_dim,layers,cumulative_time,
-                        activation_functions=['tanh', 'softmax', 'relu'],units=[5,10,20]):
+def continue_model_search(epoch_num, starting_n, best_R, best_param,
+            X_train, Y_train, X_test, Y_test, input_dim, output_dim,
+            layers, cumulative_time,
+            activation_functions=['tanh', 'softmax', 'relu'],
+            units=[5,10,20]):
     iterations = (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
     inner_iterations = (len(units)*len(activation_functions))**layers
     options= make_combo(option1=activation_functions,option2=units)
