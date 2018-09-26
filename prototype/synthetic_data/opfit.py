@@ -378,4 +378,39 @@ def layer_search(X_train,Y_train,X_test,Y_test,
         else:
             pass
     return max_R,max_param
-                                                          
+
+def continue_layer_search(layer_num,epoch_num, starting_n, best_R, best_param,
+            X_train, Y_train, X_test, Y_test, input_dim, output_dim,
+            hidden_layers, cumulative_time,
+            activation_functions=['tanh', 'softmax', 'relu'],
+            units=[5,10,20]):
+    best_list = []
+    best_R_list = []
+    for layer in hidden_layers:
+        if layer == layer_num:
+            best_param,best_R = continue_model_search(epoch_num, starting_n, best_R, best_param,
+            X_train, Y_train, X_test, Y_test, input_dim, output_dim,
+            layer, cumulative_time,activation_functions,units)
+            print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layer_count,best_R))
+            best_list.append(best_param)
+            best_R_list.append(best_R)
+        else:
+           best_param,best_R = model_multi_search_new(X_train=X_train,Y_train=Y_train,
+                                        X_test=X_test,Y_test=Y_test,
+                                        input_dim=input_dim,output_dim=output_dims,
+                                        layers=layer,
+                                        activation_functions=activation_functions,units=units)
+           print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layer_count,best_R))
+           best_list.append(best_param)
+           best_R_list.append(best_R)
+    print(best_list,best_R_list)
+    max_R = best_R_list[0]
+    max_param = best_list[0]
+    for i in range(len(best_R_list)-1):
+        if best_R_list[i+1] > best_R_list[i]:
+            max_R = best_R_list[i+1]
+            max_param = best_list[i+1]
+        else:
+            pass
+    return max_R,max_param
+                                        
