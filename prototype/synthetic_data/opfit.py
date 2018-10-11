@@ -431,4 +431,24 @@ def check_read(filename):
             y = json.load(f)
     return y
 
-                                        
+def get_epoch_num(path):
+    large_epoch = 0
+    l = 0
+    for n in range(len(path)):
+        a = path[n]
+        indices1 = [i for i, c in enumerate(a) if c == '/']
+        indices2 = [i for i, c in enumerate(a) if c == '-']
+        number = int(a[31:indices1[1]])
+        epoch_num = int(a[indices2[0]+1:indices2[1]])
+        if number > l:
+            l = number
+            large_epoch = epoch_num
+        elif number == l:
+            if epoch_num > large_epoch:
+                large_epoch = epoch_num
+            else:
+                pass
+        else:
+            pass
+            
+    return l,large_epoch                                        
