@@ -302,9 +302,16 @@ def model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,laye
     f.write("The best_R for now is %0.4f and combination is %s "% (best_R,best_param))
     return best_param,best_R
 
-def continue_model_search(X_train, Y_train, X_test, Y_test, input_dim, output_dim,
-            activation_functions=['tanh', 'softmax', 'relu'],
-            units=[5,10,20]):
+def continue_model_search(data,test_fraction,random_state,cumulative_time,params):
+    filename = data["filename"]
+    X_var = data["X_var"]
+    Y_var = data["Y_var"]
+    X,Y = read_file(filename,X_var,Y_var)
+    input_dim = len(X_var)
+    output_dim = len(Y_var)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_fraction, random_state=random_state)
+    activation_functions = params["activation_functions"]
+    units = params["units"]
     y1 = check_read("latest.json")
     starting_n = y1["starting_n"]
     print(y1)
@@ -377,9 +384,8 @@ def continue_model_search(X_train, Y_train, X_test, Y_test, input_dim, output_di
     return best_param,best_R,cumulative_time
     
 
-def layer_search(X_train,Y_train,X_test,Y_test,
-                 input_dim,output_dims,cumulative_time,
-                 activation_functions,units,hidden_layers=[1,3,5]):
+def layer_search(data,test_fraction,random_state,cumulative_time,params):
+    hidden_layers = params["hidden_layers"]
     best_list = []
     best_R_list = []
     entire_iterations = 0
@@ -387,13 +393,9 @@ def layer_search(X_train,Y_train,X_test,Y_test,
         iterations = (len(units)*len(activation_functions))**(i+1)*len(activation_functions)
         entire_iterations += iterations
     print(f"Complete search takes {entire_iterations} iterations to finish") 
-    for layer_count in hidden_layers:
-        best_param,best_R = model_multi_search_new(X_train=X_train,Y_train=Y_train,
-                                        X_test=X_test,Y_test=Y_test,
-                                        input_dim=input_dim,output_dim=output_dims,cumulative_time = cumulative_time,
-                                        layers=layer_count,
-                                        activation_functions=activation_functions,units=units)
-        print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layer_count,best_R))
+    for layers in hidden_layers:
+        best_param,best_R = model_multi_search_new(data,test_fraction,random_state,layers,cumulative_time,params)
+        print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layers,best_R))
         best_list.append(best_param)
         best_R_list.append(best_R)
         update_list = {"best_list":best_list,"best_R_list":best_R_list}
@@ -410,10 +412,17 @@ def layer_search(X_train,Y_train,X_test,Y_test,
             pass
     return max_R,max_param
 
-def continue_layer_search(X_train, Y_train, X_test, Y_test, input_dim, output_dims,
-            hidden_layers, 
-            activation_functions=['tanh', 'softmax', 'relu'],
-            units=[5,10,20]):
+def continue_layer_search(data,test_fraction,random_state,cumulative_time,params):
+    filename = data["filename"]
+    X_var = data["X_var"]
+    Y_var = data["Y_var"]
+    X,Y = read_file(filename,X_var,Y_var)
+    input_dim = len(X_var)
+    output_dim = len(Y_var)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_fraction, random_state=random_state)
+    activation_functions = params["activation_functions"]
+    units = params["units"]
+    hidden_layers = params["hidden_layers"]
     y1 = check_read("latest.json")
     layer_num = y1["layer_number"]
     epoch_num = get_epoch_num(layer_num)
@@ -428,17 +437,12 @@ def continue_layer_search(X_train, Y_train, X_test, Y_test, input_dim, output_di
         if layer < layer_num:
             pass
         elif layer == layer_num:
-            best_param,best_R,cumulative_time= continue_model_search(X_train, Y_train, X_test, Y_test, input_dim, output_dims,
-            activation_functions,units)
+            best_param,best_R,cumulative_time= continue_model_search(data,test_fraction,random_state,cumulative_time,params)
             print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layer,best_R))
             best_list.append(best_param)
             best_R_list.append(best_R)
         else:
-           best_param,best_R = model_multi_search_new(X_train=X_train,Y_train=Y_train,
-                                        X_test=X_test,Y_test=Y_test,
-                                        input_dim=input_dim,output_dim=output_dims,
-                                        layers=layer,cumulative_time=cumulative_time,
-                                        activation_functions=activation_functions,units=units)
+           best_param,best_R = model_multi_search_new(data,test_fraction,random_state,layer,cumulative_time,params)
            print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layer,best_R))
            best_list.append(best_param)
            best_R_list.append(best_R)
