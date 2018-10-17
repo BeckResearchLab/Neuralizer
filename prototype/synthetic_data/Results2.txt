@@ -1,0 +1,715 @@
+For this combination [['tanh', 5], ['tanh', 5], ['tanh', 5], 'tanh'], R is 0.61
+The best_R for now is 0.6063 and the combination is [['tanh', 5], ['tanh', 5], ['tanh', 5], 'tanh'] in 12046.29 secondsFor this combination [['tanh', 5], ['tanh', 5], ['tanh', 5], 'linear'], R is 0.91
+The best_R for now is 0.9088 and the combination is [['tanh', 5], ['tanh', 5], ['tanh', 5], 'linear'] in 12293.87 secondsFor this combination [['tanh', 10], ['tanh', 5], ['tanh', 5], 'tanh'], R is 0.65
+The best_R for now is 0.9088 and the combination is [['tanh', 10], ['tanh', 5], ['tanh', 5], 'tanh'] in 12552.14 secondsFor this combination [['tanh', 10], ['tanh', 5], ['tanh', 5], 'linear'], R is 0.91
+The best_R for now is 0.9146 and the combination is [['tanh', 10], ['tanh', 5], ['tanh', 5], 'linear'] in 12806.37 secondsFor this combination [['tanh', 18], ['tanh', 5], ['tanh', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9146 and the combination is [['tanh', 18], ['tanh', 5], ['tanh', 5], 'tanh'] in 13057.47 secondsFor this combination [['tanh', 18], ['tanh', 5], ['tanh', 5], 'linear'], R is 0.92
+The best_R for now is 0.9218 and the combination is [['tanh', 18], ['tanh', 5], ['tanh', 5], 'linear'] in 13307.48 secondsFor this combination [['linear', 5], ['tanh', 5], ['tanh', 5], 'tanh'], R is 0.66
+The best_R for now is 0.9218 and the combination is [['linear', 5], ['tanh', 5], ['tanh', 5], 'tanh'] in 13566.99 secondsFor this combination [['linear', 5], ['tanh', 5], ['tanh', 5], 'linear'], R is 0.76
+The best_R for now is 0.9218 and the combination is [['linear', 5], ['tanh', 5], ['tanh', 5], 'linear'] in 13827.82 secondsFor this combination [['linear', 10], ['tanh', 5], ['tanh', 5], 'tanh'], R is 0.65
+The best_R for now is 0.9218 and the combination is [['linear', 10], ['tanh', 5], ['tanh', 5], 'tanh'] in 14085.19 secondsFor this combination [['linear', 10], ['tanh', 5], ['tanh', 5], 'linear'], R is 0.79
+The best_R for now is 0.9218 and the combination is [['linear', 10], ['tanh', 5], ['tanh', 5], 'linear'] in 14351.33 secondsFor this combination [['linear', 18], ['tanh', 5], ['tanh', 5], 'tanh'], R is 0.68
+The best_R for now is 0.9218 and the combination is [['linear', 18], ['tanh', 5], ['tanh', 5], 'tanh'] in 14608.88 secondsFor this combination [['linear', 18], ['tanh', 5], ['tanh', 5], 'linear'], R is 0.86
+The best_R for now is 0.9218 and the combination is [['linear', 18], ['tanh', 5], ['tanh', 5], 'linear'] in 14868.05 secondsFor this combination [['tanh', 5], ['tanh', 5], ['tanh', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9218 and the combination is [['tanh', 5], ['tanh', 5], ['tanh', 10], 'tanh'] in 15124.17 secondsFor this combination [['tanh', 5], ['tanh', 5], ['tanh', 10], 'linear'], R is 0.90
+The best_R for now is 0.9218 and the combination is [['tanh', 5], ['tanh', 5], ['tanh', 10], 'linear'] in 15387.71 secondsFor this combination [['tanh', 10], ['tanh', 5], ['tanh', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9218 and the combination is [['tanh', 10], ['tanh', 5], ['tanh', 10], 'tanh'] in 15665.17 secondsFor this combination [['tanh', 10], ['tanh', 5], ['tanh', 10], 'linear'], R is 0.90
+The best_R for now is 0.9218 and the combination is [['tanh', 10], ['tanh', 5], ['tanh', 10], 'linear'] in 15936.04 secondsFor this combination [['tanh', 18], ['tanh', 5], ['tanh', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9218 and the combination is [['tanh', 18], ['tanh', 5], ['tanh', 10], 'tanh'] in 16202.99 secondsFor this combination [['tanh', 18], ['tanh', 5], ['tanh', 10], 'linear'], R is 0.93
+The best_R for now is 0.9328 and the combination is [['tanh', 18], ['tanh', 5], ['tanh', 10], 'linear'] in 16506.03 secondsFor this combination [['linear', 5], ['tanh', 5], ['tanh', 10], 'tanh'], R is 0.59
+The best_R for now is 0.9328 and the combination is [['linear', 5], ['tanh', 5], ['tanh', 10], 'tanh'] in 16784.87 secondsFor this combination [['linear', 5], ['tanh', 5], ['tanh', 10], 'linear'], R is 0.91
+The best_R for now is 0.9328 and the combination is [['linear', 5], ['tanh', 5], ['tanh', 10], 'linear'] in 17064.02 secondsFor this combination [['linear', 10], ['tanh', 5], ['tanh', 10], 'tanh'], R is 0.63
+The best_R for now is 0.9328 and the combination is [['linear', 10], ['tanh', 5], ['tanh', 10], 'tanh'] in 17342.39 secondsFor this combination [['linear', 10], ['tanh', 5], ['tanh', 10], 'linear'], R is 0.86
+The best_R for now is 0.9328 and the combination is [['linear', 10], ['tanh', 5], ['tanh', 10], 'linear'] in 17625.82 secondsFor this combination [['linear', 18], ['tanh', 5], ['tanh', 10], 'tanh'], R is 0.61
+The best_R for now is 0.9328 and the combination is [['linear', 18], ['tanh', 5], ['tanh', 10], 'tanh'] in 17914.35 secondsFor this combination [['linear', 18], ['tanh', 5], ['tanh', 10], 'linear'], R is 0.90
+The best_R for now is 0.9328 and the combination is [['linear', 18], ['tanh', 5], ['tanh', 10], 'linear'] in 18205.44 secondsFor this combination [['tanh', 5], ['tanh', 5], ['tanh', 18], 'tanh'], R is 0.68
+The best_R for now is 0.9328 and the combination is [['tanh', 5], ['tanh', 5], ['tanh', 18], 'tanh'] in 18518.48 secondsFor this combination [['tanh', 5], ['tanh', 5], ['tanh', 18], 'linear'], R is 0.92
+The best_R for now is 0.9328 and the combination is [['tanh', 5], ['tanh', 5], ['tanh', 18], 'linear'] in 18808.83 secondsFor this combination [['tanh', 10], ['tanh', 5], ['tanh', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9328 and the combination is [['tanh', 10], ['tanh', 5], ['tanh', 18], 'tanh'] in 19086.90 secondsFor this combination [['tanh', 10], ['tanh', 5], ['tanh', 18], 'linear'], R is 0.94
+The best_R for now is 0.9372 and the combination is [['tanh', 10], ['tanh', 5], ['tanh', 18], 'linear'] in 19379.07 secondsFor this combination [['tanh', 18], ['tanh', 5], ['tanh', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9372 and the combination is [['tanh', 18], ['tanh', 5], ['tanh', 18], 'tanh'] in 19685.18 secondsFor this combination [['tanh', 18], ['tanh', 5], ['tanh', 18], 'linear'], R is 0.93
+The best_R for now is 0.9372 and the combination is [['tanh', 18], ['tanh', 5], ['tanh', 18], 'linear'] in 19971.98 secondsFor this combination [['linear', 5], ['tanh', 5], ['tanh', 18], 'tanh'], R is 0.61
+The best_R for now is 0.9372 and the combination is [['linear', 5], ['tanh', 5], ['tanh', 18], 'tanh'] in 20257.66 secondsFor this combination [['linear', 5], ['tanh', 5], ['tanh', 18], 'linear'], R is 0.85
+The best_R for now is 0.9372 and the combination is [['linear', 5], ['tanh', 5], ['tanh', 18], 'linear'] in 20549.48 secondsFor this combination [['linear', 10], ['tanh', 5], ['tanh', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9372 and the combination is [['linear', 10], ['tanh', 5], ['tanh', 18], 'tanh'] in 20846.54 secondsFor this combination [['linear', 10], ['tanh', 5], ['tanh', 18], 'linear'], R is 0.89
+The best_R for now is 0.9372 and the combination is [['linear', 10], ['tanh', 5], ['tanh', 18], 'linear'] in 21134.30 secondsFor this combination [['linear', 18], ['tanh', 5], ['tanh', 18], 'tanh'], R is 0.68
+The best_R for now is 0.9372 and the combination is [['linear', 18], ['tanh', 5], ['tanh', 18], 'tanh'] in 21510.76 secondsFor this combination [['linear', 18], ['tanh', 5], ['tanh', 18], 'linear'], R is 0.87
+The best_R for now is 0.9372 and the combination is [['linear', 18], ['tanh', 5], ['tanh', 18], 'linear'] in 21801.08 secondsFor this combination [['tanh', 5], ['tanh', 5], ['linear', 5], 'tanh'], R is 0.67
+The best_R for now is 0.9372 and the combination is [['tanh', 5], ['tanh', 5], ['linear', 5], 'tanh'] in 22160.44 secondsFor this combination [['tanh', 5], ['tanh', 5], ['linear', 5], 'linear'], R is 0.94
+The best_R for now is 0.9415 and the combination is [['tanh', 5], ['tanh', 5], ['linear', 5], 'linear'] in 22450.59 secondsFor this combination [['tanh', 10], ['tanh', 5], ['linear', 5], 'tanh'], R is 0.71
+The best_R for now is 0.9415 and the combination is [['tanh', 10], ['tanh', 5], ['linear', 5], 'tanh'] in 22754.33 secondsFor this combination [['tanh', 10], ['tanh', 5], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9415 and the combination is [['tanh', 10], ['tanh', 5], ['linear', 5], 'linear'] in 23051.87 secondsFor this combination [['tanh', 18], ['tanh', 5], ['linear', 5], 'tanh'], R is 0.71
+The best_R for now is 0.9415 and the combination is [['tanh', 18], ['tanh', 5], ['linear', 5], 'tanh'] in 23352.24 secondsFor this combination [['tanh', 18], ['tanh', 5], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9415 and the combination is [['tanh', 18], ['tanh', 5], ['linear', 5], 'linear'] in 23653.32 secondsFor this combination [['linear', 5], ['tanh', 5], ['linear', 5], 'tanh'], R is 0.62
+The best_R for now is 0.9415 and the combination is [['linear', 5], ['tanh', 5], ['linear', 5], 'tanh'] in 23952.43 secondsFor this combination [['linear', 5], ['tanh', 5], ['linear', 5], 'linear'], R is 0.76
+The best_R for now is 0.9415 and the combination is [['linear', 5], ['tanh', 5], ['linear', 5], 'linear'] in 24258.68 secondsFor this combination [['linear', 10], ['tanh', 5], ['linear', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9415 and the combination is [['linear', 10], ['tanh', 5], ['linear', 5], 'tanh'] in 24892.16 secondsFor this combination [['linear', 10], ['tanh', 5], ['linear', 5], 'linear'], R is 0.88
+The best_R for now is 0.9415 and the combination is [['linear', 10], ['tanh', 5], ['linear', 5], 'linear'] in 25197.77 secondsFor this combination [['linear', 18], ['tanh', 5], ['linear', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9415 and the combination is [['linear', 18], ['tanh', 5], ['linear', 5], 'tanh'] in 25501.91 secondsFor this combination [['linear', 18], ['tanh', 5], ['linear', 5], 'linear'], R is 0.88
+The best_R for now is 0.9415 and the combination is [['linear', 18], ['tanh', 5], ['linear', 5], 'linear'] in 25809.91 secondsFor this combination [['tanh', 5], ['tanh', 5], ['linear', 10], 'tanh'], R is 0.62
+The best_R for now is 0.9415 and the combination is [['tanh', 5], ['tanh', 5], ['linear', 10], 'tanh'] in 26108.39 secondsFor this combination [['tanh', 5], ['tanh', 5], ['linear', 10], 'linear'], R is 0.85
+The best_R for now is 0.9415 and the combination is [['tanh', 5], ['tanh', 5], ['linear', 10], 'linear'] in 26412.48 secondsFor this combination [['tanh', 10], ['tanh', 5], ['linear', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9415 and the combination is [['tanh', 10], ['tanh', 5], ['linear', 10], 'tanh'] in 26850.03 secondsFor this combination [['tanh', 10], ['tanh', 5], ['linear', 10], 'linear'], R is 0.92
+The best_R for now is 0.9415 and the combination is [['tanh', 10], ['tanh', 5], ['linear', 10], 'linear'] in 27173.65 secondsFor this combination [['tanh', 18], ['tanh', 5], ['linear', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9415 and the combination is [['tanh', 18], ['tanh', 5], ['linear', 10], 'tanh'] in 27680.20 secondsFor this combination [['tanh', 18], ['tanh', 5], ['linear', 10], 'linear'], R is 0.92
+The best_R for now is 0.9415 and the combination is [['tanh', 18], ['tanh', 5], ['linear', 10], 'linear'] in 28010.28 secondsFor this combination [['linear', 5], ['tanh', 5], ['linear', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9415 and the combination is [['linear', 5], ['tanh', 5], ['linear', 10], 'tanh'] in 28337.11 secondsFor this combination [['linear', 5], ['tanh', 5], ['linear', 10], 'linear'], R is 0.88
+The best_R for now is 0.9415 and the combination is [['linear', 5], ['tanh', 5], ['linear', 10], 'linear'] in 28661.10 secondsFor this combination [['linear', 10], ['tanh', 5], ['linear', 10], 'tanh'], R is 0.61
+The best_R for now is 0.9415 and the combination is [['linear', 10], ['tanh', 5], ['linear', 10], 'tanh'] in 29132.76 secondsFor this combination [['linear', 10], ['tanh', 5], ['linear', 10], 'linear'], R is 0.83
+The best_R for now is 0.9415 and the combination is [['linear', 10], ['tanh', 5], ['linear', 10], 'linear'] in 29455.70 secondsFor this combination [['linear', 18], ['tanh', 5], ['linear', 10], 'tanh'], R is 0.68
+The best_R for now is 0.9415 and the combination is [['linear', 18], ['tanh', 5], ['linear', 10], 'tanh'] in 29943.13 secondsFor this combination [['linear', 18], ['tanh', 5], ['linear', 10], 'linear'], R is 0.88
+The best_R for now is 0.9415 and the combination is [['linear', 18], ['tanh', 5], ['linear', 10], 'linear'] in 30262.27 secondsFor this combination [['tanh', 5], ['tanh', 5], ['linear', 18], 'tanh'], R is 0.63
+The best_R for now is 0.9415 and the combination is [['tanh', 5], ['tanh', 5], ['linear', 18], 'tanh'] in 30584.17 secondsFor this combination [['tanh', 5], ['tanh', 5], ['linear', 18], 'linear'], R is 0.89
+The best_R for now is 0.9415 and the combination is [['tanh', 5], ['tanh', 5], ['linear', 18], 'linear'] in 30913.41 secondsFor this combination [['tanh', 10], ['tanh', 5], ['linear', 18], 'tanh'], R is 0.68
+The best_R for now is 0.9415 and the combination is [['tanh', 10], ['tanh', 5], ['linear', 18], 'tanh'] in 31257.60 secondsFor this combination [['tanh', 10], ['tanh', 5], ['linear', 18], 'linear'], R is 0.91
+The best_R for now is 0.9415 and the combination is [['tanh', 10], ['tanh', 5], ['linear', 18], 'linear'] in 31588.27 secondsFor this combination [['tanh', 18], ['tanh', 5], ['linear', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9415 and the combination is [['tanh', 18], ['tanh', 5], ['linear', 18], 'tanh'] in 31926.89 secondsFor this combination [['tanh', 18], ['tanh', 5], ['linear', 18], 'linear'], R is 0.91
+The best_R for now is 0.9415 and the combination is [['tanh', 18], ['tanh', 5], ['linear', 18], 'linear'] in 32264.03 secondsFor this combination [['linear', 5], ['tanh', 5], ['linear', 18], 'tanh'], R is 0.62
+The best_R for now is 0.9415 and the combination is [['linear', 5], ['tanh', 5], ['linear', 18], 'tanh'] in 32602.17 secondsFor this combination [['linear', 5], ['tanh', 5], ['linear', 18], 'linear'], R is 0.85
+The best_R for now is 0.9415 and the combination is [['linear', 5], ['tanh', 5], ['linear', 18], 'linear'] in 32934.11 secondsFor this combination [['linear', 10], ['tanh', 5], ['linear', 18], 'tanh'], R is 0.63
+The best_R for now is 0.9415 and the combination is [['linear', 10], ['tanh', 5], ['linear', 18], 'tanh'] in 33655.22 secondsFor this combination [['linear', 10], ['tanh', 5], ['linear', 18], 'linear'], R is 0.88
+The best_R for now is 0.9415 and the combination is [['linear', 10], ['tanh', 5], ['linear', 18], 'linear'] in 33989.86 secondsFor this combination [['linear', 18], ['tanh', 5], ['linear', 18], 'tanh'], R is 0.63
+The best_R for now is 0.9415 and the combination is [['linear', 18], ['tanh', 5], ['linear', 18], 'tanh'] in 34433.29 secondsFor this combination [['linear', 18], ['tanh', 5], ['linear', 18], 'linear'], R is 0.76
+The best_R for now is 0.9415 and the combination is [['linear', 18], ['tanh', 5], ['linear', 18], 'linear'] in 34769.98 secondsFor this combination [['tanh', 5], ['tanh', 10], ['tanh', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9415 and the combination is [['tanh', 5], ['tanh', 10], ['tanh', 5], 'tanh'] in 35109.99 secondsFor this combination [['tanh', 5], ['tanh', 10], ['tanh', 5], 'linear'], R is 0.92
+The best_R for now is 0.9415 and the combination is [['tanh', 5], ['tanh', 10], ['tanh', 5], 'linear'] in 35458.10 secondsFor this combination [['tanh', 10], ['tanh', 10], ['tanh', 5], 'tanh'], R is 0.71
+The best_R for now is 0.9415 and the combination is [['tanh', 10], ['tanh', 10], ['tanh', 5], 'tanh'] in 35992.69 secondsFor this combination [['tanh', 10], ['tanh', 10], ['tanh', 5], 'linear'], R is 0.91
+The best_R for now is 0.9415 and the combination is [['tanh', 10], ['tanh', 10], ['tanh', 5], 'linear'] in 36344.15 secondsFor this combination [['tanh', 18], ['tanh', 10], ['tanh', 5], 'tanh'], R is 0.71
+The best_R for now is 0.9415 and the combination is [['tanh', 18], ['tanh', 10], ['tanh', 5], 'tanh'] in 36692.09 secondsFor this combination [['tanh', 18], ['tanh', 10], ['tanh', 5], 'linear'], R is 0.93
+The best_R for now is 0.9415 and the combination is [['tanh', 18], ['tanh', 10], ['tanh', 5], 'linear'] in 37043.05 secondsFor this combination [['linear', 5], ['tanh', 10], ['tanh', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9415 and the combination is [['linear', 5], ['tanh', 10], ['tanh', 5], 'tanh'] in 37400.13 secondsFor this combination [['linear', 5], ['tanh', 10], ['tanh', 5], 'linear'], R is 0.91
+The best_R for now is 0.9415 and the combination is [['linear', 5], ['tanh', 10], ['tanh', 5], 'linear'] in 37756.95 secondsFor this combination [['linear', 10], ['tanh', 10], ['tanh', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9415 and the combination is [['linear', 10], ['tanh', 10], ['tanh', 5], 'tanh'] in 38128.33 secondsFor this combination [['linear', 10], ['tanh', 10], ['tanh', 5], 'linear'], R is 0.88
+The best_R for now is 0.9415 and the combination is [['linear', 10], ['tanh', 10], ['tanh', 5], 'linear'] in 38506.34 secondsFor this combination [['linear', 18], ['tanh', 10], ['tanh', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9415 and the combination is [['linear', 18], ['tanh', 10], ['tanh', 5], 'tanh'] in 38875.84 secondsFor this combination [['linear', 18], ['tanh', 10], ['tanh', 5], 'linear'], R is 0.91
+The best_R for now is 0.9415 and the combination is [['linear', 18], ['tanh', 10], ['tanh', 5], 'linear'] in 39259.05 secondsFor this combination [['tanh', 5], ['tanh', 10], ['tanh', 10], 'tanh'], R is 0.68
+The best_R for now is 0.9415 and the combination is [['tanh', 5], ['tanh', 10], ['tanh', 10], 'tanh'] in 39657.58 secondsFor this combination [['tanh', 5], ['tanh', 10], ['tanh', 10], 'linear'], R is 0.86
+The best_R for now is 0.9415 and the combination is [['tanh', 5], ['tanh', 10], ['tanh', 10], 'linear'] in 40033.32 secondsFor this combination [['tanh', 10], ['tanh', 10], ['tanh', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9415 and the combination is [['tanh', 10], ['tanh', 10], ['tanh', 10], 'tanh'] in 40419.11 secondsFor this combination [['tanh', 10], ['tanh', 10], ['tanh', 10], 'linear'], R is 0.95
+The best_R for now is 0.9455 and the combination is [['tanh', 10], ['tanh', 10], ['tanh', 10], 'linear'] in 40810.45 secondsFor this combination [['tanh', 18], ['tanh', 10], ['tanh', 10], 'tanh'], R is 0.72
+The best_R for now is 0.9455 and the combination is [['tanh', 18], ['tanh', 10], ['tanh', 10], 'tanh'] in 41220.67 secondsFor this combination [['tanh', 18], ['tanh', 10], ['tanh', 10], 'linear'], R is 0.92
+The best_R for now is 0.9455 and the combination is [['tanh', 18], ['tanh', 10], ['tanh', 10], 'linear'] in 41614.42 secondsFor this combination [['linear', 5], ['tanh', 10], ['tanh', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9455 and the combination is [['linear', 5], ['tanh', 10], ['tanh', 10], 'tanh'] in 42007.29 secondsFor this combination [['linear', 5], ['tanh', 10], ['tanh', 10], 'linear'], R is 0.90
+The best_R for now is 0.9455 and the combination is [['linear', 5], ['tanh', 10], ['tanh', 10], 'linear'] in 42403.02 secondsFor this combination [['linear', 10], ['tanh', 10], ['tanh', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9455 and the combination is [['linear', 10], ['tanh', 10], ['tanh', 10], 'tanh'] in 42798.59 secondsFor this combination [['linear', 10], ['tanh', 10], ['tanh', 10], 'linear'], R is 0.87
+The best_R for now is 0.9455 and the combination is [['linear', 10], ['tanh', 10], ['tanh', 10], 'linear'] in 43180.26 secondsFor this combination [['linear', 18], ['tanh', 10], ['tanh', 10], 'tanh'], R is 0.66
+The best_R for now is 0.9455 and the combination is [['linear', 18], ['tanh', 10], ['tanh', 10], 'tanh'] in 43566.38 secondsFor this combination [['linear', 18], ['tanh', 10], ['tanh', 10], 'linear'], R is 0.91
+The best_R for now is 0.9455 and the combination is [['linear', 18], ['tanh', 10], ['tanh', 10], 'linear'] in 43941.06 secondsFor this combination [['tanh', 5], ['tanh', 10], ['tanh', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9455 and the combination is [['tanh', 5], ['tanh', 10], ['tanh', 18], 'tanh'] in 44331.00 secondsFor this combination [['tanh', 5], ['tanh', 10], ['tanh', 18], 'linear'], R is 0.93
+The best_R for now is 0.9455 and the combination is [['tanh', 5], ['tanh', 10], ['tanh', 18], 'linear'] in 44715.60 secondsFor this combination [['tanh', 10], ['tanh', 10], ['tanh', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9455 and the combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'tanh'] in 45362.46 secondsFor this combination [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'], R is 0.96
+The best_R for now is 0.9590 and the combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] in 45751.98 secondsFor this combination [['tanh', 18], ['tanh', 10], ['tanh', 18], 'tanh'], R is 0.72
+The best_R for now is 0.9590 and the combination is [['tanh', 18], ['tanh', 10], ['tanh', 18], 'tanh'] in 46146.45 secondsFor this combination [['tanh', 18], ['tanh', 10], ['tanh', 18], 'linear'], R is 0.93
+The best_R for now is 0.9590 and the combination is [['tanh', 18], ['tanh', 10], ['tanh', 18], 'linear'] in 46541.63 secondsFor this combination [['linear', 5], ['tanh', 10], ['tanh', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and the combination is [['linear', 5], ['tanh', 10], ['tanh', 18], 'tanh'] in 47006.76 secondsFor this combination [['linear', 5], ['tanh', 10], ['tanh', 18], 'linear'], R is 0.92
+The best_R for now is 0.9590 and the combination is [['linear', 5], ['tanh', 10], ['tanh', 18], 'linear'] in 47396.82 secondsFor this combination [['linear', 10], ['tanh', 10], ['tanh', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and the combination is [['linear', 10], ['tanh', 10], ['tanh', 18], 'tanh'] in 47890.29 secondsFor this combination [['linear', 10], ['tanh', 10], ['tanh', 18], 'linear'], R is 0.89
+The best_R for now is 0.9590 and the combination is [['linear', 10], ['tanh', 10], ['tanh', 18], 'linear'] in 48298.18 secondsFor this combination [['linear', 18], ['tanh', 10], ['tanh', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and the combination is [['linear', 18], ['tanh', 10], ['tanh', 18], 'tanh'] in 48812.68 secondsFor this combination [['linear', 18], ['tanh', 10], ['tanh', 18], 'linear'], R is 0.87
+The best_R for now is 0.9590 and the combination is [['linear', 18], ['tanh', 10], ['tanh', 18], 'linear'] in 49220.01 secondsFor this combination [['tanh', 5], ['tanh', 10], ['linear', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and the combination is [['tanh', 5], ['tanh', 10], ['linear', 5], 'tanh'] in 49627.93 secondsFor this combination [['tanh', 5], ['tanh', 10], ['linear', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and the combination is [['tanh', 5], ['tanh', 10], ['linear', 5], 'linear'] in 50033.18 secondsFor this combination [['tanh', 10], ['tanh', 10], ['linear', 5], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and the combination is [['tanh', 10], ['tanh', 10], ['linear', 5], 'tanh'] in 50461.91 secondsFor this combination [['tanh', 10], ['tanh', 10], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and the combination is [['tanh', 10], ['tanh', 10], ['linear', 5], 'linear'] in 50881.42 secondsFor this combination [['tanh', 18], ['tanh', 10], ['linear', 5], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and the combination is [['tanh', 18], ['tanh', 10], ['linear', 5], 'tanh'] in 51363.78 secondsFor this combination [['tanh', 18], ['tanh', 10], ['linear', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and the combination is [['tanh', 18], ['tanh', 10], ['linear', 5], 'linear'] in 51843.05 secondsFor this combination [['linear', 5], ['tanh', 10], ['linear', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and the combination is [['linear', 5], ['tanh', 10], ['linear', 5], 'tanh'] in 53027.49 secondsFor this combination [['linear', 5], ['tanh', 10], ['linear', 5], 'linear'], R is 0.89
+The best_R for now is 0.9590 and the combination is [['linear', 5], ['tanh', 10], ['linear', 5], 'linear'] in 53441.81 secondsFor this combination [['linear', 10], ['tanh', 10], ['linear', 5], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and the combination is [['linear', 10], ['tanh', 10], ['linear', 5], 'tanh'] in 53940.38 secondsFor this combination [['linear', 10], ['tanh', 10], ['linear', 5], 'linear'], R is 0.90
+The best_R for now is 0.9590 and the combination is [['linear', 10], ['tanh', 10], ['linear', 5], 'linear'] in 54366.54 secondsFor this combination [['linear', 18], ['tanh', 10], ['linear', 5], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and the combination is [['linear', 18], ['tanh', 10], ['linear', 5], 'tanh'] in 54832.86 secondsFor this combination [['linear', 18], ['tanh', 10], ['linear', 5], 'linear'], R is 0.90
+The best_R for now is 0.9590 and the combination is [['linear', 18], ['tanh', 10], ['linear', 5], 'linear'] in 55258.82 secondsFor this combination [['tanh', 5], ['tanh', 10], ['linear', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and the combination is [['tanh', 5], ['tanh', 10], ['linear', 10], 'tanh'] in 55682.00 secondsFor this combination [['tanh', 5], ['tanh', 10], ['linear', 10], 'linear'], R is 0.90
+The best_R for now is 0.9590 and the combination is [['tanh', 5], ['tanh', 10], ['linear', 10], 'linear'] in 56108.22 secondsFor this combination [['tanh', 10], ['tanh', 10], ['linear', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and the combination is [['tanh', 10], ['tanh', 10], ['linear', 10], 'tanh'] in 56532.51 secondsFor this combination [['tanh', 10], ['tanh', 10], ['linear', 10], 'linear'], R is 0.93
+The best_R for now is 0.9590 and the combination is [['tanh', 10], ['tanh', 10], ['linear', 10], 'linear'] in 56955.01 secondsFor this combination [['tanh', 18], ['tanh', 10], ['linear', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and the combination is [['tanh', 18], ['tanh', 10], ['linear', 10], 'tanh'] in 57380.57 secondsFor this combination [['tanh', 18], ['tanh', 10], ['linear', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and the combination is [['tanh', 18], ['tanh', 10], ['linear', 10], 'linear'] in 57814.41 secondsFor this combination [['linear', 5], ['tanh', 10], ['linear', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and the combination is [['linear', 5], ['tanh', 10], ['linear', 10], 'tanh'] in 58247.74 secondsFor this combination [['linear', 5], ['tanh', 10], ['linear', 10], 'linear'], R is 0.86
+The best_R for now is 0.9590 and the combination is [['linear', 5], ['tanh', 10], ['linear', 10], 'linear'] in 58688.91 secondsFor this combination [['linear', 10], ['tanh', 10], ['linear', 10], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and the combination is [['linear', 10], ['tanh', 10], ['linear', 10], 'tanh'] in 59123.97 secondsFor this combination [['linear', 10], ['tanh', 10], ['linear', 10], 'linear'], R is 0.91
+The best_R for now is 0.9590 and the combination is [['linear', 10], ['tanh', 10], ['linear', 10], 'linear'] in 59558.69 secondsFor this combination [['linear', 18], ['tanh', 10], ['linear', 10], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and the combination is [['linear', 18], ['tanh', 10], ['linear', 10], 'tanh'] in 59996.71 secondsFor this combination [['linear', 18], ['tanh', 10], ['linear', 10], 'linear'], R is 0.91
+The best_R for now is 0.9590 and the combination is [['linear', 18], ['tanh', 10], ['linear', 10], 'linear'] in 60434.43 secondsFor this combination [['tanh', 5], ['tanh', 10], ['linear', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and the combination is [['tanh', 5], ['tanh', 10], ['linear', 18], 'tanh'] in 61072.49 secondsFor this combination [['tanh', 5], ['tanh', 10], ['linear', 18], 'linear'], R is 0.89
+The best_R for now is 0.9590 and the combination is [['tanh', 5], ['tanh', 10], ['linear', 18], 'linear'] in 61503.83 secondsFor this combination [['tanh', 10], ['tanh', 10], ['linear', 18], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and the combination is [['tanh', 10], ['tanh', 10], ['linear', 18], 'tanh'] in 61955.30 secondsFor this combination [['tanh', 10], ['tanh', 10], ['linear', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and the combination is [['tanh', 10], ['tanh', 10], ['linear', 18], 'linear'] in 62402.73 secondsFor this combination [['tanh', 18], ['tanh', 10], ['linear', 18], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and the combination is [['tanh', 18], ['tanh', 10], ['linear', 18], 'tanh'] in 62847.55 secondsFor this combination [['tanh', 18], ['tanh', 10], ['linear', 18], 'linear'], R is 0.92
+The best_R for now is 0.9590 and the combination is [['tanh', 18], ['tanh', 10], ['linear', 18], 'linear'] in 63305.83 secondsFor this combination [['linear', 5], ['tanh', 10], ['linear', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and the combination is [['linear', 5], ['tanh', 10], ['linear', 18], 'tanh'] in 64679.84 secondsFor this combination [['linear', 5], ['tanh', 10], ['linear', 18], 'linear'], R is 0.88
+The best_R for now is 0.9590 and the combination is [['linear', 5], ['tanh', 10], ['linear', 18], 'linear'] in 65145.81 secondsFor this combination [['linear', 10], ['tanh', 10], ['linear', 18], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and the combination is [['linear', 10], ['tanh', 10], ['linear', 18], 'tanh'] in 65620.31 secondsFor this combination [['linear', 10], ['tanh', 10], ['linear', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and the combination is [['linear', 10], ['tanh', 10], ['linear', 18], 'linear'] in 66095.07 secondsFor this combination [['linear', 18], ['tanh', 10], ['linear', 18], 'tanh'], R is 0.62
+The best_R for now is 0.9590 and the combination is [['linear', 18], ['tanh', 10], ['linear', 18], 'tanh'] in 66694.67 secondsFor this combination [['linear', 18], ['tanh', 10], ['linear', 18], 'linear'], R is 0.91
+The best_R for now is 0.9590 and the combination is [['linear', 18], ['tanh', 10], ['linear', 18], 'linear'] in 67165.41 secondsFor this combination [['tanh', 5], ['tanh', 18], ['tanh', 5], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and the combination is [['tanh', 5], ['tanh', 18], ['tanh', 5], 'tanh'] in 67639.96 secondsFor this combination [['tanh', 5], ['tanh', 18], ['tanh', 5], 'linear'], R is 0.90
+The best_R for now is 0.9590 and the combination is [['tanh', 5], ['tanh', 18], ['tanh', 5], 'linear'] in 68118.08 secondsFor this combination [['tanh', 10], ['tanh', 18], ['tanh', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and the combination is [['tanh', 10], ['tanh', 18], ['tanh', 5], 'tanh'] in 68581.43 secondsFor this combination [['tanh', 10], ['tanh', 18], ['tanh', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and the combination is [['tanh', 10], ['tanh', 18], ['tanh', 5], 'linear'] in 69054.16 secondsFor this combination [['tanh', 18], ['tanh', 18], ['tanh', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['tanh', 5], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['tanh', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 5], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 5], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.95
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.72
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.72
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 5], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 5], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 5], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 5], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 10], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 10], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 10], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 10], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 18], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 18], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 18], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.62
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 5], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 5], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 5], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.62
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 5], 'linear'], R is 0.82
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 5], 'linear'], R is 0.81
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 5], 'linear'], R is 0.77
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 10], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 10], 'linear'], R is 0.86
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 10], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 10], 'linear'], R is 0.87
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 18], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 18], 'linear'], R is 0.95
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 18], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 18], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 18], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 5], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 5], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 5], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 5], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 5], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 5], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 5], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 5], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 5], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 10], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 10], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 10], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 10], 'tanh'], R is 0.55
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 10], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 10], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 10], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 10], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 10], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 18], 'linear'], R is 0.75
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 18], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 18], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 18], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 18], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 18], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 18], 'linear'], R is 0.28
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 18], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 5], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 5], 'linear'], R is 0.86
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 5], 'linear'], R is 0.72
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 5], 'linear'], R is 0.76
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 10], 'linear'], R is 0.86
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 10], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 10], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 18], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 18], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 18], 'linear'], R is 0.95
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 18], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 18], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 5], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 5], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 5], 'tanh'], R is 0.53
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 5], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 5], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 5], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 5], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 5], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 10], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 10], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 10], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 10], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 10], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 10], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 10], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 10], 'tanh'], R is 0.56
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 10], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 18], 'tanh'], R is 0.60
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 18], 'linear'], R is 0.85
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 18], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 18], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 18], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 18], 'tanh'], R is 0.56
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 18], 'linear'], R is 0.28
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 18], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 5], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 5], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 5], 'linear'], R is 0.76
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 5], 'linear'], R is 0.85
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 5], 'linear'], R is 0.86
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.72
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 10], 'linear'], R is 0.86
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 10], 'linear'], R is 0.87
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.62
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 10], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 18], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 18], 'linear'], R is 0.95
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'], R is 0.96
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 18], 'linear'], R is 0.90
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 18], 'linear'], R is 0.91
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.63
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 18], 'linear'], R is 0.92
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 5], 'tanh'], R is 0.65
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 5], 'linear'], R is 0.91
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 5], 'tanh'], R is 0.68
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 5], 'tanh'], R is 0.70
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 5], 'linear'], R is 0.94
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 5], 'tanh'], R is 0.57
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 5], 'linear'], R is 0.27
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 5], 'tanh'], R is 0.58
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 5], 'linear'], R is 0.27
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 5], 'tanh'], R is 0.57
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 5], 'linear'], R is 0.26
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 10], 'linear'], R is 0.92
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 10], 'linear'], R is 0.91
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 10], 'linear'], R is 0.91
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 10], 'tanh'], R is 0.57
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 10], 'linear'], R is 0.28
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 10], 'tanh'], R is 0.55
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 10], 'linear'], R is 0.28
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 10], 'tanh'], R is 0.58
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 10], 'linear'], R is 0.27
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 18], 'tanh'], R is 0.68
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 18], 'linear'], R is 0.78
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 18], 'linear'], R is 0.92
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 18], 'linear'], R is 0.93
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 18], 'linear'], R is 0.26
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 18], 'tanh'], R is 0.56
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 18], 'linear'], R is 0.27
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 18], 'tanh'], R is 0.59
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 18], 'linear'], R is 0.27
+The best_R for now is 0.9603 and combination is [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['tanh', 5], 'tanh'], R is 0.72
+The best_R for now is 0.9590 and the combination is [['tanh', 18], ['tanh', 18], ['tanh', 5], 'tanh'] in 69529.80 secondsFor this combination [['linear', 5], ['tanh', 18], ['tanh', 5], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['tanh', 5], 'linear'], R is 0.77
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 5], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 5], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 5], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.72
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 10], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['tanh', 18], 'linear'], R is 0.87
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 5], 'linear'], R is 0.86
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 5], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 5], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 10], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 10], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 10], 'linear'], R is 0.87
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['tanh', 18], ['linear', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['tanh', 18], ['linear', 18], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['tanh', 18], ['linear', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['tanh', 18], ['linear', 18], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['tanh', 18], ['linear', 18], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 18], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['tanh', 18], ['linear', 18], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 5], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.72
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 5], 'linear'], R is 0.95
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 5], 'linear'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 5], 'linear'], R is 0.74
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 5], 'linear'], R is 0.75
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 10], 'linear'], R is 0.85
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 10], 'linear'], R is 0.80
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 10], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['tanh', 18], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['tanh', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['tanh', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['tanh', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.61
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['tanh', 18], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['tanh', 18], 'linear'], R is 0.86
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 5], 'tanh'], R is 0.61
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 5], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 5], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 5], 'linear'], R is 0.28
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 5], 'tanh'], R is 0.57
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 5], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 5], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 5], 'linear'], R is 0.28
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 10], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 10], 'linear'], R is 0.87
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 10], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 10], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 10], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 10], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 10], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 10], 'tanh'], R is 0.56
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 10], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 18], 'tanh'], R is 0.68
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 5], ['linear', 18], 'linear'], R is 0.85
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 5], ['linear', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 18], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 5], ['linear', 18], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 5], ['linear', 18], 'linear'], R is 0.25
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 5], ['linear', 18], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 5], ['linear', 18], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 5], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 5], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 5], 'linear'], R is 0.82
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.61
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 5], 'linear'], R is 0.75
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 5], 'tanh'], R is 0.61
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 5], 'linear'], R is 0.87
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 10], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.72
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 10], 'linear'], R is 0.95
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 10], 'linear'], R is 0.95
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.61
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 10], 'linear'], R is 0.86
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 10], 'linear'], R is 0.89
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 10], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 10], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['tanh', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.72
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['tanh', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.72
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['tanh', 18], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['tanh', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['tanh', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['tanh', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 5], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 5], 'linear'], R is 0.87
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 5], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 5], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 5], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 5], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 5], 'linear'], R is 0.25
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 5], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 5], 'linear'], R is 0.24
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 5], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 5], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 10], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 10], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 10], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 10], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 10], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 10], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 10], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 10], 'linear'], R is 0.24
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 10], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 10], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 18], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 10], ['linear', 18], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 10], ['linear', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 10], ['linear', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 18], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 10], ['linear', 18], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 10], ['linear', 18], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 10], ['linear', 18], 'linear'], R is 0.25
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 5], 'linear'], R is 0.87
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 5], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 5], 'linear'], R is 0.76
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.61
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 5], 'linear'], R is 0.76
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 5], 'linear'], R is 0.77
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.66
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 10], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 10], 'linear'], R is 0.95
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.72
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 10], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 10], 'linear'], R is 0.88
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 10], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 10], 'tanh'], R is 0.61
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 10], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['tanh', 18], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['tanh', 18], 'linear'], R is 0.95
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.71
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['tanh', 18], 'linear'], R is 0.96
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.63
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['tanh', 18], 'linear'], R is 0.85
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['tanh', 18], 'linear'], R is 0.91
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 18], 'tanh'], R is 0.64
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['tanh', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 5], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 5], 'linear'], R is 0.87
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 5], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 5], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 5], 'tanh'], R is 0.67
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 5], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 5], 'tanh'], R is 0.57
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 5], 'linear'], R is 0.24
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 5], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 5], 'linear'], R is 0.28
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 5], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 5], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 10], 'tanh'], R is 0.65
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 10], 'linear'], R is 0.85
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 10], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 10], 'linear'], R is 0.92
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 10], 'tanh'], R is 0.57
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 10], 'linear'], R is 0.25
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 10], 'tanh'], R is 0.56
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 10], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 10], 'tanh'], R is 0.59
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 10], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 18], 'tanh'], R is 0.61
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 5], ['linear', 18], ['linear', 18], 'linear'], R is 0.90
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 18], 'tanh'], R is 0.69
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 10], ['linear', 18], ['linear', 18], 'linear'], R is 0.93
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 18], 'tanh'], R is 0.70
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['tanh', 18], ['linear', 18], ['linear', 18], 'linear'], R is 0.94
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 5], ['linear', 18], ['linear', 18], 'linear'], R is 0.27
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 18], 'tanh'], R is 0.57
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 10], ['linear', 18], ['linear', 18], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 18], 'tanh'], R is 0.58
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] For this combination [['linear', 18], ['linear', 18], ['linear', 18], 'linear'], R is 0.26
+The best_R for now is 0.9590 and combination is [['tanh', 10], ['tanh', 10], ['tanh', 18], 'linear'] 
