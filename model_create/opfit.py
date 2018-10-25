@@ -17,7 +17,7 @@ def read_file(filename, X_var, Y_var):
     The function takes name of datafile, list of predictors and response
     it returns array_like X and Y for data fitting
     """
-    location = os.path.abspath(filename)
+    location = os.path.abspath('./data/%s/'%filename)
     df = pd.read_csv('%s'%location,sep='\t')
     X = np.array(df[X_var].values)
     Y = np.array(df[Y_var].values)
