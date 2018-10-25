@@ -389,6 +389,8 @@ def layer_search(data,test_fraction,random_state,cumulative_time,params):
     best_list = []
     best_R_list = []
     entire_iterations = 0
+    activation_functions = params["activation_functions"]
+    units = params ["units"]
     for i in hidden_layers:
         iterations = (len(units)*len(activation_functions))**(i+1)*len(activation_functions)
         entire_iterations += iterations
