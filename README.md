@@ -16,7 +16,10 @@ Use cases
 
 Getting started
 -----------------
-
+* Install conda
+* Create a virtual environment using conda and the `environment.yml` file supplied in this repository
+* Use the virtual environment to proprocess the input with...
+* ...
 
 References
 -----------------
