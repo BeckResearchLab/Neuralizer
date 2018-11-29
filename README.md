@@ -20,4 +20,4 @@ Getting started
 
 References
 -----------------
-[Murbach2017] http://paper.location "P2D model stuff"
+Murbach2017[Murbach2017]: http://paper.location "P2D model stuff"
