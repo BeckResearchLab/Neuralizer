@@ -1,7 +1,7 @@
 Neuralizer
 ==========
 
-![Neuralizer logo](https://ih0.redbubble.net/image.32348833.3786/pp,550x550.u1.jpg)
+![Neuralizer logo](https://ih0.redbubble.net/image.32348833.3786/pp,250*250.u1.jpg)
 
 Neuralizer, is a tool to find substitute neural network model for complicated physics based, kinetic & flux models. Examples include: P2D model of Li-ion battery [Murbach2017](#Murbach2017). Models of these types are typically composed of a complex set of PDE or ODEs. This makes solving these models computationally complex and expensive.  Moreover, using these models that take seconds to solve prohibits them from being used in real-time situations like process control that require subsecond solutions. In contrast, neural network models are less time-consuming and computionally expensive to use for producing solutions and when properly trained, can provide nearly as accurate predictions as the complete physics, kinetic or flux based model.
 
@@ -18,7 +18,7 @@ Getting started
 -----------------
 * Install conda
 * Create a virtual environment using conda and the `environment.yml` file supplied in this repository
-* Use the virtual environment to proprocess the input with [data_process.py](../blob/organizer/model_create/data_process.py)
+* Use the virtual environment to proprocess the input with [data_process.py](https://github.com/BeckResearchLab/Neuralizer/blob/organizer/model_create/data_process.py)
 * ...
 
 References
