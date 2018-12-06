@@ -21,7 +21,7 @@ Getting started
 * Use the virtual environment to proprocess the input with [data_process.py](https://github.com/BeckResearchLab/Neuralizer/blob/organizer/model_create/data_process.py)
 * Do coarse and broader  search first with [parameter.py](https://github.com/BeckResearchLab/Neuralizer/blob/organizer/model_create/parameter.py)
 * After Getting a bucket of better paramter combinations, do complete search with [complete_search.py](https://github.com/BeckResearchLab/Neuralizer/blob/organizer/model_create/complete_search.py)
-* The intermediate, latest and best results along with their configuration are stored in recorder
+* The intermediate, latest and best results along with their configuration are stored in [Results](https://github.com/BeckResearchLab/Neuralizer/tree/organizer/model_create/Results)
 
 
 References
