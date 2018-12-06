@@ -12,6 +12,18 @@ import numpy as np
 import pandas as pd
 import sklearn
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
 
-
-
+def pca_eval(data):
+    '''
+    This function is to evaluate the rugness of data, whcih would determine the smaple size for pretraining process
+    It takes formatted data as parameter
+    The explained variance ratio is printed
+    '''
+    x = data['X_var']
+    x = StandardScaler().fit_transform(x)
+    pca = PCA()
+    pca.fit(x)
+    print(pca.explained_variance_ratio_)    
+     
