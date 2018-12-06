@@ -18,7 +18,7 @@ Getting started
 -----------------
 * Install conda
 * Create a virtual environment using conda and the `environment.yml` file supplied in this repository
-* Use the virtual environment to proprocess the input with...
+* Use the virtual environment to proprocess the input with [data_process.py](../blob/organizer/model_create/data_process.py)
 * ...
 
 References
