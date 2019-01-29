@@ -21,9 +21,12 @@ def pca_eval(data):
     It takes formatted data as parameter
     The explained variance ratio is printed
     '''
-    x = data['X_var']
-    x = StandardScaler().fit_transform(x)
+    X_var,Y_var,input_dim,output_dim = dp.data_info(data)
+    x = StandardScaler().fit_transform(X_var)
     pca = PCA()
     pca.fit(x)
-    print(pca.explained_variance_ratio_)    
-     
+    print(pca.explained_variance_ratio_)  
+    return pca.explained_variance_ratio_
+
+  
+    

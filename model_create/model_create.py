@@ -268,7 +268,6 @@ def model_continue_search(data,test_fraction,random_state,cumulative_time,params
                         print(x)
                         pr.check_write(x,'latest.json')
                         print("")
-    f.close()
 
     print(best_param)
     print(best_R)
@@ -329,6 +328,11 @@ def continue_layer_search(data,test_fraction,random_state,cumulative_time,params
             pass
         elif layer == layer_num:
             best_param,best_R=model_continue_search(data,test_fraction,random_state,cumulative_time,params)
+            print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layer,best_R))
+            best_list.append(best_param)
+            best_R_list.append(best_R)
+        else:
+            best_param,best_R = model_initial_search(data,test_fraction,random_state,layer,cumulative_time,params)
             print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layer,best_R))
             best_list.append(best_param)
             best_R_list.append(best_R)
