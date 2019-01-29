@@ -1,5 +1,4 @@
-Neuralizer
-==========
+# Neuralizer
 
 ![Neuralizer logo](https://github.com/BeckResearchLab/Neuralizer/blob/organizer/Logo.png)
 
