@@ -1,9 +1,10 @@
 #Build basic structure of network
-import data_process
 import glob
 import os
 import time
 import json
+import data_process as dp
+import param_record as pr
 import keras
 from keras import *
 import keras.backend as K
@@ -55,12 +56,7 @@ def make_pairwise_list(max_depth=2, options=['tanh', 'softmax', 'relu']):
     return combinations
 
 def model_initial_search(data,test_fraction,random_state,layers,cumulative_time,params):
-    filename = data["filename"]
-    X_var = data["X_var"]
-    Y_var = data["Y_var"]
-    X,Y = read_file(filename,X_var,Y_var)
-    input_dim = len(X_var)
-    output_dim = len(Y_var)
+    X,Y,input_dim,output_dim = dp.data_info(data)
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_fraction, random_state=random_state)
     activation_functions = params["activation_functions"]
     units = params["units"]
@@ -97,7 +93,10 @@ def model_initial_search(data,test_fraction,random_state,layers,cumulative_time,
                 model.add(keras.layers.Dense(output_dim,activation=activation_out))
                 model.compile(loss='mean_squared_error', optimizer='adam',metrics=[R_squared])
                 earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
-                collection_folder = './collection%d' % (layers)
+                collection_folder = './Results/collection%d' % (layers)
+                if not os.path.exists(collection_folder):
+                    os.makedirs(collection_folder)
+                output_folder = './Results/collection%d/intermediate_output%d'%(layers,iteration_n)
                 if not os.path.exists(output_folder):
                     os.makedirs(output_folder)
                 filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
@@ -107,48 +106,48 @@ def model_initial_search(data,test_fraction,random_state,layers,cumulative_time,
                 history = model.fit(X_train,Y_train,epochs=300, batch_size=10,callbacks=callbacks_list,validation_split=0.2,verbose=0)
                 end = time.time()
                 cumulative_time += (end-start)
+                print('it already took %0.2f seconds' % (cumulative_time))
                 scores = model.evaluate(X_test,Y_test,verbose=0)
-                iteration_n += 1
-                if not os.path.exists("Results%d.txt"%(layers)):
-                    f = open("Results%d.txt"%(layers),"w+")
+                if not os.path.exists("results%d.txt"%(layers)):
+                    f = open("results%d.txt"%(layers),"w+")
                 else:
-                    f = open("Results%d.txt"%(layers),"a+")
+                    f = open("results%d.txt"%(layers),"a+")
                 f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
                 if scores[1]>best_R:
                     best_param = parameter_list
                     best_R = scores[1]
                 else:
                     pass
-                f.write("The best_R for now is %0.4f and the combination is %s in %0.2f seconds" % (best_R,parameter_list,cumulative_time))
+                f.write("The best_R for now is %0.4f and combination is %s "% (best_R,best_param))
+                iteration_n += 1
                 x ={"layer_number":layers,"starting_n":iteration_n-1,"best_R":best_R,"best_param":best_param,"cumulative_time":cumulative_time}
                 print(x)
-                check_write(x,'latest.json')
+                pr.check_write(x,'latest.json')
+                print("")
         print("")
     f.close()
     print(best_param)
     print(best_R)
+    print('Training process has been finished')
     print('model took %0.2f seconds to train'%(cumulative_time))
     return best_param,best_R
 
 def model_continue_search(data,test_fraction,random_state,cumulative_time,params):
-    filename = data["filename"]
-    X_var = data["X_var"]
-    Y_var = data["Y_var"]
-    X,Y = read_file(filename,X_var,Y_var)
-    input_dim = len(X_var)
-    output_dim = len(Y_var)
+    X,Y,input_dim,output_dim = dp.data_info(data)
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_fraction, random_state=random_state)
     activation_functions = params["activation_functions"]
     units = params["units"]
-    y1 = check_read("latest.json")
+    activation_functions = params["activation_functions"]
+    units = params["units"]
+    y1 =pr.check_read("latest.json")
     starting_n = y1["starting_n"]
     print(y1)
     best_R = y1["best_R"]
     best_param = y1["best_param"]
     cumulative_time = y1["cumulative_time"]
     layers = y1["layer_number"]
-    epoch_num = get_epoch_num(layers)
-    iterations = (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
+    epoch_num = pr.get_epoch_num(layers)
+    iterations = (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)-starting_n
     inner_iterations = (len(units)*len(activation_functions))**layers
     options= make_combo(option1=activation_functions,option2=units)
     af_combs = make_pairwise_list(max_depth=layers, options=options)
@@ -178,16 +177,36 @@ def model_continue_search(data,test_fraction,random_state,cumulative_time,params
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
                     model.compile(loss='mean_squared_error', optimizer='adam',metrics=[R_squared])
                     earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
-                    callbacks_list = model_creation_run_two(earlystop,iteration_n,layers)
+                    collection_folder = './Results/collection%d' % (layers)
+                    if not os.path.exists(collection_folder):
+                        os.makedirs(collection_folder)
+                    output_folder = './Results/collection%d/intermediate_output%d'%(layers,iteration_n)
+                    if not os.path.exists(output_folder):
+                        os.makedirs(output_folder)
+                    filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
+                    checkpoint = keras.callbacks.ModelCheckpoint(filepath, monitor='val_R_squared', verbose=1, save_best_only=False, save_weights_only=True, mode='auto', period=10)
+                    callbacks_list = [earlystop,checkpoint]
                     start = time.time()
                     history = model.fit(X_train,Y_train,epochs=300, batch_size=10,callbacks=callbacks_list,validation_split=0.2,verbose=0)
                     end = time.time()
                     cumulative_time += (end-start)
-                    best_param,best_R = model_creation_run_three(model,X_test,Y_test,iteration_n,parameter_list,layers,best_R,best_param)
+                    print('it already took %0.2f seconds' % (cumulative_time))
+                    scores = model.evaluate(X_test,Y_test,verbose=0)
+                    if not os.path.exists("results%d.txt"%(layers)):
+                        f = open("results%d.txt"%(layers),"w+")
+                    else:
+                        f = open("results%d.txt"%(layers),"a+")
+                    f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
+                    if scores[1]>best_R:
+                        best_param = parameter_list
+                        best_R = scores[1]
+                    else:
+                        pass
+                    f.write("The best_R for now is %0.4f and combination is %s "% (best_R,best_param))
                     iteration_n += 1
                     x ={"layer_number":layers,"starting_n":iteration_n-1,"best_R":best_R,"best_param":best_param,"cumulative_time":cumulative_time}
                     print(x)
-                    check_write(x,'latest.json')
+                    pr.check_write(x,'latest.json')
                     print("")
                 else:
                     if not (iteration_n > starting_n):
@@ -209,7 +228,7 @@ def model_continue_search(data,test_fraction,random_state,cumulative_time,params
                         model.add(keras.layers.Dense(output_dim,activation=activation_out))
                         model.compile(loss='mean_squared_error', optimizer='adam',metrics=[R_squared])
                         earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
-                        output_folder = './collection%d/intermediate_output%d' % (layers,iteration_n)
+                        output_folder = './Results/collection%d/intermediate_output%d' % (layers,iteration_n)
                         file_ini = output_folder+'/weights-'+str(epoch_num)+'*'
                         filename = glob.glob(file_ini)
                         print(filename)
@@ -217,10 +236,10 @@ def model_continue_search(data,test_fraction,random_state,cumulative_time,params
                             model.load_weights(filename[0])
                         else:
                             print("%s does not exists" % (filename[0]))
-                        collection_folder = './collection%d' % (layers)
+                        collection_folder = './Results/collection%d' % (layers)
                         if not os.path.exists(collection_folder):
                             os.makedirs(collection_folder)
-                        output_folder = './collection%d/intermediate_output%d'%(layers,iteration_n)
+                        output_folder = './Results/collection%d/intermediate_output%d'%(layers,iteration_n)
                         if not os.path.exists(output_folder):
                             os.makedirs(output_folder)
                         filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
@@ -232,11 +251,10 @@ def model_continue_search(data,test_fraction,random_state,cumulative_time,params
                         cumulative_time += (end-start)
                         print('it already took %0.2f seconds' % (cumulative_time))
                         scores = model.evaluate(X_test,Y_test,verbose=0)
-                        iteration_n += 1
-                        if not os.path.exists("Results%d.txt"%(layers)):
-                            f = open("Results%d.txt"%(layers),"w+")
+                        if not os.path.exists("results%d.txt"%(layers)):
+                            f = open("results%d.txt"%(layers),"w+")
                         else:
-                            f = open("Results%d.txt"%(layers),"a+")
+                            f = open("results%d.txt"%(layers),"a+")
                         f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
                         if scores[1]>best_R:
                             best_param = parameter_list
@@ -248,5 +266,80 @@ def model_continue_search(data,test_fraction,random_state,cumulative_time,params
                         iteration_n += 1
                         x ={"layer_number":layers,"starting_n":iteration_n-1,"best_R":best_R,"best_param":best_param,"cumulative_time":cumulative_time}
                         print(x)
-                        check_write(x,'latest.json')
+                        pr.check_write(x,'latest.json')
                         print("")
+    f.close()
+
+    print(best_param)
+    print(best_R)
+    print('Training process has been finished')
+    print('model took %0.2f seconds to train'%(cumulative_time))
+    return best_param,best_R
+
+def layer_search(data,test_fraction,random_state,cumulative_time,params):
+    hidden_layers = params["hidden_layers"]
+    best_list = []
+    best_R_list = []
+    entire_iterations = 0
+    activation_functions = params["activation_functions"]
+    units = params ["units"]
+    for i in hidden_layers:
+        iterations = (len(units)*len(activation_functions))**(i+1)*len(activation_functions)
+        entire_iterations += iterations
+    print(f"Complete search takes {entire_iterations} iterations to finish")
+    for layers in hidden_layers:
+        best_param,best_R = model_initial_search(data,test_fraction,random_state,layers,cumulative_time,params)
+        print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layers,best_R))
+        best_list.append(best_param)
+        best_R_list.append(best_R)
+        update_list = {"best_list":best_list,"best_R_list":best_R_list}
+        print(update_list)
+        pr.check_write(update_list,"list.json")
+    print(best_list,best_R_list)
+    max_R = best_R_list[0]
+    max_param = best_list[0]
+    for i in range(len(best_R_list)-1):
+        if best_R_list[i+1] > best_R_list[i]:
+            max_R = best_R_list[i+1]
+            max_param = best_list[i+1]
+        else:
+            pass
+    return max_R,max_param
+
+def continue_layer_search(data,test_fraction,random_state,cumulative_time,params):
+    X,Y,input_dim,output_dim = dp.data_info(data)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_fraction, random_state=random_state)
+    activation_functions = params["activation_functions"]
+    units = params["units"]
+    activation_functions = params["activation_functions"]
+    units = params["units"]
+    hidden_layers = params["hidden_layers"]
+    y1 = pr.check_read("latest.json")
+    layer_num = y1["layer_number"]
+    epoch_num = pr.get_epoch_num(layer_num)
+    if os.path.exists("./list.json"):
+        y2 = pr.check_read("list.json")
+        best_list = y2["best_list"]
+        best_R_list = y2["best_R_list"]
+    else:
+        best_list = []
+        best_R_list = []
+    for layer in hidden_layers:
+        if layer < layer_num:
+            pass
+        elif layer == layer_num:
+            best_param,best_R=model_continue_search(data,test_fraction,random_state,cumulative_time,params)
+            print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layer,best_R))
+            best_list.append(best_param)
+            best_R_list.append(best_R)
+    print(best_list,best_R_list)
+    max_R = best_R_list[0]
+    max_param = best_list[0]
+    for i in range(len(best_R_list)-1):
+        if best_R_list[i+1] > best_R_list[i]:
+            max_R = best_R_list[i+1]
+            max_param = best_list[i+1]
+        else:
+            pass
+    return max_R,max_param
+                                                                                                                                                                                                 
