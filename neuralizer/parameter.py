@@ -28,5 +28,4 @@ def pca_eval(data):
     print(pca.explained_variance_ratio_)  
     return pca.explained_variance_ratio_
 
-  
-    
+def pretrain_search(portion, data, parameter)
