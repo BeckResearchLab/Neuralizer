@@ -108,8 +108,8 @@ def model_initial_search(data,test_fraction,random_state,layers,cumulative_time,
                 cumulative_time += (end-start)
                 print('it already took %0.2f seconds' % (cumulative_time))
                 scores = model.evaluate(X_test,Y_test,verbose=0)
-                if not os.path.exists("results%d.txt"%(layers)):
-                    f = open("results%d.txt"%(layers),"w+")
+                if not os.path.exists("./Results/results%d.txt"%(layers)):
+                    f = open("./Results/results%d.txt"%(layers),"w+")
                 else:
                     f = open("results%d.txt"%(layers),"a+")
                 f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
@@ -251,10 +251,10 @@ def model_continue_search(data,test_fraction,random_state,cumulative_time,params
                         cumulative_time += (end-start)
                         print('it already took %0.2f seconds' % (cumulative_time))
                         scores = model.evaluate(X_test,Y_test,verbose=0)
-                        if not os.path.exists("results%d.txt"%(layers)):
-                            f = open("results%d.txt"%(layers),"w+")
+                        if not os.path.exists("./Results/results%d.txt"%(layers)):
+                            f = open("./Results/results%d.txt"%(layers),"w+")
                         else:
-                            f = open("results%d.txt"%(layers),"a+")
+                            f = open("./Results/results%d.txt"%(layers),"a+")
                         f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
                         if scores[1]>best_R:
                             best_param = parameter_list
