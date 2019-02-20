@@ -14,7 +14,7 @@ import sklearn
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-
+import random 
 def pca_eval(data):
     '''
     This function is to evaluate the rugness of data, whcih would determine the smaple size for pretraining process
@@ -30,6 +30,11 @@ def pca_eval(data):
 
 def pretrain_search(data,portion,test_fraction,random_state,layers,params):
     X,Y,input_dim,output_dim = dp.data_info(data)
+    k = portion * len(X)
+    data_dict = {"X":X,"Y":Y}
+    data_dict = random.sample(data_dict,k)
+    X = data_dict["X"]
+    Y = data_dict["Y"]
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_fraction, random_state=random_state)
     activation_functions = params["activation_functions"]
     units = params["units"]
@@ -37,8 +42,7 @@ def pretrain_search(data,portion,test_fraction,random_state,layers,params):
     inner_iterations = (len(units)*len(activation_functions))**layers
     options= make_combo(option1=activation_functions,option2=units)
     af_combs = make_pairwise_list(max_depth=layers, options=options)
-    print(f'{layers}\t{options}\t{iterations} iterations required')
-    best_R = 0.0
+   # print(f'{layers}\t{options}\t{iterations} iterations required')
     best_param = []
     iteration_n = 1
     for n in range(layers):
