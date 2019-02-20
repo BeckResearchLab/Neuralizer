@@ -36,6 +36,7 @@ def pretrain_search(data,portion,test_fraction,random_state,layers,params):
     X = data_dict["X"]
     Y = data_dict["Y"]
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_fraction, random_state=random_state)
+    cumulative_time = 0.0
     activation_functions = params["activation_functions"]
     units = params["units"]
     iterations = (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
@@ -70,15 +71,7 @@ def pretrain_search(data,portion,test_fraction,random_state,layers,params):
                 model.add(keras.layers.Dense(output_dim,activation=activation_out))
                 model.compile(loss='mean_squared_error', optimizer='adam',metrics=[R_squared])
                 earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
-                collection_folder = './Results/collection%d' % (layers)
-                if not os.path.exists(collection_folder):
-                    os.makedirs(collection_folder)
-                output_folder = './Results/collection%d/intermediate_output%d'%(layers,iteration_n)
-                if not os.path.exists(output_folder):
-                    os.makedirs(output_folder)
-                filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
-                checkpoint = keras.callbacks.ModelCheckpoint(filepath, monitor='val_R_squared', verbose=1, save_best_only=False, save_weights_only=True, mode='auto', period=10)
-                callbacks_list = [earlystop,checkpoint]
+                callbacks_list = [earlystop]
                 start = time.time()
                 history = model.fit(X_train,Y_train,epochs=300, batch_size=10,callbacks=callbacks_list,validation_split=0.2,verbose=0)
                 end = time.time()
