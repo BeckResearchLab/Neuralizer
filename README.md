@@ -2,7 +2,7 @@
 
 ![Neuralizer logo](https://github.com/BeckResearchLab/Neuralizer/blob/master/Logo.png)
 
-Neuralizer, is a tool to find substitute neural network model for complicated physics based, kinetic & flux models. Examples include: P2D model of Li-ion battery [Murbach2017](#Murbach2017). Models of these types are typically composed of a complex set of PDE or ODEs. This makes solving these models computationally complex and expensive.  Moreover, using these models that take seconds to solve prohibits them from being used in real-time situations like process control that require subsecond solutions. In contrast, neural network models are less time-consuming and computionally expensive to use for producing solutions and when properly trained, can provide nearly as accurate predictions as the complete physics, kinetic or flux based model.
+Neuralizer, is a tool to find substitute neural network model for complicated physics based, kinetic & flux models. Examples include: P2D model of Li-ion battery [Murbach2017](Murbach, M. D. & Schwartz, D. T). Models of these types are typically composed of a complex set of PDE or ODEs. This makes solving these models computationally complex and expensive.  Moreover, using these models that take seconds to solve prohibits them from being used in real-time situations like process control that require subsecond solutions. In contrast, neural network models are less time-consuming and computionally expensive to use for producing solutions and when properly trained, can provide nearly as accurate predictions as the complete physics, kinetic or flux based model.
 
 The module is built on top of Keras and Tensorflow.  It also depends on the other usual suspects of the scientific Python stack such as pandas, scikit-learn and numpy.
 
@@ -47,5 +47,5 @@ Getting started
 
 
 References
------------------
-<bch, M. D. & Schwartz, D. T. Analysis of Li-ion battery electrochemical impedance spectroscopy data: An easy-to-implement approach for physics-based parameter estimation using an open-source tool. Journal of The Electrochemical Society 165, A297-A304 (2018).](https://dx.doi.org/10.1149/2.1021802jes) name="Murbach2017">Murbach2017: http://paper.location "P2D model stuff"</a>
+-----------
+[Murbach, M. D. & Schwartz, D. T. Analysis of Li-ion battery electrochemical impedance spectroscopy data: An easy-to-implement approach for physics-based parameter estimation using an open-source tool. Journal of The Electrochemical Society 165, A297-A304 (2018).](https://dx.doi.org/10.1149/2.1021802jes)
