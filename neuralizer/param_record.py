@@ -17,7 +17,7 @@ def get_epoch_num(layer_num):
     path_list = glob.glob('**/*.hdf5',recursive = True)
     path = []
     for i in range(len(path_list)):
-        if int(path_list[i][18]) == layer_num:
+        if int(path_list[i][23]) == layer_num:
             path.append(path_list[i])
     large_epoch = 0
     l = 0
@@ -28,7 +28,7 @@ def get_epoch_num(layer_num):
 #        print(a)
 #       print(indices1)
 #      print(indices2)
-        number = int(a[39:indices1[2]])
+        number = int(a[44:indices1[2]])
         epoch_num = int(a[indices2[0]+1:indices2[1]])
         if number > l:
             l = number
