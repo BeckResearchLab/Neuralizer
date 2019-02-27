@@ -12,11 +12,18 @@ Organization of project
       |- README.md
       |- neuralizer/
          |- __init__.py
+         |- data_process.py
          |- model_create.py
          |- param_record.py
          |- parameter.py
          |- latest.json
-
+         |- data/
+            |- ...
+         |- tests/
+            |- ...
+         |- Results
+            |- ...
+      |doc/
 
 Use cases
 ----------------
