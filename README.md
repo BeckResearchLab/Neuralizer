@@ -17,13 +17,17 @@ Organization of project
          |- param_record.py
          |- parameter.py
          |- latest.json
+         |- Example notebook.ipynb
          |- data/
             |- ...
          |- tests/
             |- ...
          |- Results
             |- ...
-      |doc/
+      |- doc/
+         | - ...
+      |- setup.py
+      |- LICENSE
 
 Use cases
 ----------------
