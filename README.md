@@ -48,4 +48,4 @@ Getting started
 
 References
 -----------------
-<a name="Murbach2017">Murbach2017: http://paper.location "P2D model stuff"</a>
+<bch, M. D. & Schwartz, D. T. Analysis of Li-ion battery electrochemical impedance spectroscopy data: An easy-to-implement approach for physics-based parameter estimation using an open-source tool. Journal of The Electrochemical Society 165, A297-A304 (2018).](https://dx.doi.org/10.1149/2.1021802jes) name="Murbach2017">Murbach2017: http://paper.location "P2D model stuff"</a>
