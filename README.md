@@ -6,6 +6,18 @@ Neuralizer, is a tool to find substitute neural network model for complicated ph
 
 The module is built on top of Keras and Tensorflow.  It also depends on the other usual suspects of the scientific Python stack such as pandas, scikit-learn and numpy.
 
+Organization of project 
+-----------------------
+    Neuralizer/
+      |- README.md
+      |- neuralizer/
+         |- __init__.py
+         |- model_create.py
+         |- param_record.py
+         |- parameter.py
+         |- latest.json
+
+
 Use cases
 ----------------
 * Preprocess the sensitivity analysis results of a physics based, kinetic or flux model
