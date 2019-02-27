@@ -57,6 +57,7 @@ def make_pairwise_list(max_depth=2, options=['tanh', 'softmax', 'relu']):
 
 def model_initial_search(data,test_fraction,random_state,layers,cumulative_time,params):
     X,Y,input_dim,output_dim = dp.data_info(data)
+    proj_name = data["proj_name"]
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_fraction, random_state=random_state)
     activation_functions = params["activation_functions"]
     units = params["units"]
@@ -93,10 +94,10 @@ def model_initial_search(data,test_fraction,random_state,layers,cumulative_time,
                 model.add(keras.layers.Dense(output_dim,activation=activation_out))
                 model.compile(loss='mean_squared_error', optimizer='adam',metrics=[R_squared])
                 earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
-                collection_folder = './Results/collection%d' % (layers)
+                collection_folder = './Results/%s_collection%d' % (proj_name,layers)
                 if not os.path.exists(collection_folder):
                     os.makedirs(collection_folder)
-                output_folder = './Results/collection%d/intermediate_output%d'%(layers,iteration_n)
+                output_folder = './Results/%s_collection%d/intermediate_output%d'%(proj_name,layers,iteration_n)
                 if not os.path.exists(output_folder):
                     os.makedirs(output_folder)
                 filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
@@ -111,7 +112,7 @@ def model_initial_search(data,test_fraction,random_state,layers,cumulative_time,
                 if not os.path.exists("./Results/results%d.txt"%(layers)):
                     f = open("./Results/results%d.txt"%(layers),"w+")
                 else:
-                    f = open("results%d.txt"%(layers),"a+")
+                    f = open("./Results/results%d.txt"%(layers),"a+")
                 f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
                 if scores[1]>best_R:
                     best_param = parameter_list
@@ -134,6 +135,7 @@ def model_initial_search(data,test_fraction,random_state,layers,cumulative_time,
 
 def model_continue_search(data,test_fraction,random_state,cumulative_time,params):
     X,Y,input_dim,output_dim = dp.data_info(data)
+    proj_name = data['proj_name']
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_fraction, random_state=random_state)
     activation_functions = params["activation_functions"]
     units = params["units"]
@@ -177,10 +179,10 @@ def model_continue_search(data,test_fraction,random_state,cumulative_time,params
                     model.add(keras.layers.Dense(output_dim,activation=activation_out))
                     model.compile(loss='mean_squared_error', optimizer='adam',metrics=[R_squared])
                     earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
-                    collection_folder = './Results/collection%d' % (layers)
+                    collection_folder = './Results/%s_collection%d' % (proj_name,layers)
                     if not os.path.exists(collection_folder):
                         os.makedirs(collection_folder)
-                    output_folder = './Results/collection%d/intermediate_output%d'%(layers,iteration_n)
+                    output_folder = './Results/%s_collection%d/intermediate_output%d'%(proj_name,layers,iteration_n)
                     if not os.path.exists(output_folder):
                         os.makedirs(output_folder)
                     filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
@@ -192,10 +194,10 @@ def model_continue_search(data,test_fraction,random_state,cumulative_time,params
                     cumulative_time += (end-start)
                     print('it already took %0.2f seconds' % (cumulative_time))
                     scores = model.evaluate(X_test,Y_test,verbose=0)
-                    if not os.path.exists("results%d.txt"%(layers)):
-                        f = open("results%d.txt"%(layers),"w+")
+                    if not os.path.exists("./Results/results%d.txt"%(layers)):
+                        f = open("./Results/results%d.txt"%(layers),"w+")
                     else:
-                        f = open("results%d.txt"%(layers),"a+")
+                        f = open("./Results/results%d.txt"%(layers),"a+")
                     f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
                     if scores[1]>best_R:
                         best_param = parameter_list
@@ -228,7 +230,7 @@ def model_continue_search(data,test_fraction,random_state,cumulative_time,params
                         model.add(keras.layers.Dense(output_dim,activation=activation_out))
                         model.compile(loss='mean_squared_error', optimizer='adam',metrics=[R_squared])
                         earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
-                        output_folder = './Results/collection%d/intermediate_output%d' % (layers,iteration_n)
+                        output_folder = './Results/%s_collection%d/intermediate_output%d' % (proj_name,layers,iteration_n)
                         file_ini = output_folder+'/weights-'+str(epoch_num)+'*'
                         filename = glob.glob(file_ini)
                         print(filename)
@@ -236,10 +238,10 @@ def model_continue_search(data,test_fraction,random_state,cumulative_time,params
                             model.load_weights(filename[0])
                         else:
                             print("%s does not exists" % (filename[0]))
-                        collection_folder = './Results/collection%d' % (layers)
+                        collection_folder = './Results/%s_collection%d' % (proj_name,layers)
                         if not os.path.exists(collection_folder):
                             os.makedirs(collection_folder)
-                        output_folder = './Results/collection%d/intermediate_output%d'%(layers,iteration_n)
+                        output_folder = './Results/%s_collection%d/intermediate_output%d'%(proj_name,layers,iteration_n)
                         if not os.path.exists(output_folder):
                             os.makedirs(output_folder)
                         filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
