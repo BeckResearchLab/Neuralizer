@@ -13,5 +13,5 @@ def test_read_file():
 def test_data_info():
     data = {"filename":"test.tsv","X_var":["A","B"],"Y_var":"y"}
     X,Y,input_dim,output_dim = dp.data_info(data)
-    assert(input_dim == 2),"Dimension of input layer is not correct"
-    assert(output_dim == 1), "Dimension of output layer is not correct"
+    assert input_dim == 2,"Dimension of input layer is not correct"
+    assert output_dim == 1 , "Dimension of output layer is not correct"
