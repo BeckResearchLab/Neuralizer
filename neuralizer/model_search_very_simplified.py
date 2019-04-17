@@ -182,7 +182,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
                         else:
                             pass
                         f.write("The best_R for now is %0.4f and combination is %s "% (best_R,best_param))
-                        print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layer,best_R))
+                        print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layers,best_R))
                         run_once = 1
 
                         iteration_n += 1
