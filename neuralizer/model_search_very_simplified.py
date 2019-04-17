@@ -65,12 +65,11 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
     activation_functions = params["activation_functions"]
     units = params["units"]
     hidden_layers = params["hidden_layers"]
-    options= make_combo(option1=activation_functions,option2=units)
-    af_combs = make_pairwise_list(max_depth=layers, options=options)
+
     if os.path.exists("./list.json"):
         y2 = pr.check_read("list.json")
-    best_list = y2["best_list"]
-    best_R_list = y2["best_R_list"]
+        best_list = y2["best_list"]
+        best_R_list = y2["best_R_list"]
     else:
         best_list = []
         best_R_list = []
@@ -78,11 +77,12 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
     total_iteration = 0
     for i in hidden_layers:
         total_iteration += (len(units)*len(activation_functions))**(i+1)*len(activation_functions)
-    print(f"Total number of iterations needed is  {total_iteration}")
 
     for layers in hidden_layers:
         iteration_n = 1
         iteration_l = 0
+        options= make_combo(option1=activation_functions,option2=units)
+        af_combs = make_pairwise_list(max_depth=layers, options=options)
         if restart:
             y1 = pr.check_read("latest.json")
             starting_n = y1["starting_n"]
@@ -106,12 +106,13 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
         
         if layers < layer_num:
             iteration_l += (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
-            
+            pass 
         elif layers == layer_num:
             while run_once == 0 and not iteration_n > starting_n:
                 iteration_n += 1
                 iteration_l += 1
-                
+            total_iteration -= iteration_l
+            print(f"Now total iteration left is {total_iteration}")
             inner_iterations = (len(units)*len(activation_functions))**layers
             for inner_iteration in range(inner_iterations):
                 for option_in in options:
@@ -181,7 +182,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
                         else:
                             pass
                         f.write("The best_R for now is %0.4f and combination is %s "% (best_R,best_param))
-                        print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layer,best_R))
+                        print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layers,best_R))
                         run_once = 1
 
                         iteration_n += 1
