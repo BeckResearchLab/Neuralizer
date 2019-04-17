@@ -78,7 +78,6 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
     total_iteration = 0
     for i in hidden_layers:
         total_iteration += (len(units)*len(activation_functions))**(i+1)*len(activation_functions)
-    print(f"Total number of iterations needed is  {total_iteration}")
 
     for layers in hidden_layers:
         iteration_n = 1
@@ -106,12 +105,13 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
         
         if layers < layer_num:
             iteration_l += (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
-            
+            pass 
         elif layers == layer_num:
             while run_once == 0 and not iteration_n > starting_n:
                 iteration_n += 1
                 iteration_l += 1
-                
+            total_iteration -= iteration_l
+            print(f"Now total iteration left is {total_iteration}")
             inner_iterations = (len(units)*len(activation_functions))**layers
             for inner_iteration in range(inner_iterations):
                 for option_in in options:
