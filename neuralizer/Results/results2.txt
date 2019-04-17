@@ -104,4 +104,5 @@ The best_R for now is 0.9539 and combination is [['tanh', 18], ['tanh', 5], ['li
 The best_R for now is 0.9539 and combination is [['tanh', 18], ['tanh', 5], ['linear', 10], 'linear'] For this combination [['linear', 5], ['tanh', 10], ['tanh', 18], 'linear'], R is 0.91
 The best_R for now is 0.9539 and combination is [['tanh', 18], ['tanh', 5], ['linear', 10], 'linear'] For this combination [['linear', 10], ['tanh', 10], ['tanh', 18], 'tanh'], R is 0.70
 The best_R for now is 0.9539 and combination is [['tanh', 18], ['tanh', 5], ['linear', 10], 'linear'] For this combination [['linear', 10], ['tanh', 10], ['tanh', 18], 'linear'], R is 0.92
-The best_R for now is 0.9539 and combination is [['tanh', 18], ['tanh', 5], ['linear', 10], 'linear'] 
+The best_R for now is 0.9539 and combination is [['tanh', 18], ['tanh', 5], ['linear', 10], 'linear'] For this combination [['tanh', 5], ['tanh', 5], ['tanh', 5], 'tanh'], R is 0.63
+The best_R for now is 0.6303 and combination is [['tanh', 5], ['tanh', 5], ['tanh', 5], 'tanh'] 
