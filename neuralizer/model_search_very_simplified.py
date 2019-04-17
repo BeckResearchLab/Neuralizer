@@ -65,8 +65,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
     activation_functions = params["activation_functions"]
     units = params["units"]
     hidden_layers = params["hidden_layers"]
-    options= make_combo(option1=activation_functions,option2=units)
-    af_combs = make_pairwise_list(max_depth=layers, options=options)
+
     if os.path.exists("./list.json"):
         y2 = pr.check_read("list.json")
         best_list = y2["best_list"]
@@ -82,6 +81,8 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
     for layers in hidden_layers:
         iteration_n = 1
         iteration_l = 0
+        options= make_combo(option1=activation_functions,option2=units)
+        af_combs = make_pairwise_list(max_depth=layers, options=options)
         if restart:
             y1 = pr.check_read("latest.json")
             starting_n = y1["starting_n"]
