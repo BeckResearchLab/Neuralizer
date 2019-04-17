@@ -69,8 +69,8 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
     af_combs = make_pairwise_list(max_depth=layers, options=options)
     if os.path.exists("./list.json"):
         y2 = pr.check_read("list.json")
-    best_list = y2["best_list"]
-    best_R_list = y2["best_R_list"]
+        best_list = y2["best_list"]
+        best_R_list = y2["best_R_list"]
     else:
         best_list = []
         best_R_list = []
