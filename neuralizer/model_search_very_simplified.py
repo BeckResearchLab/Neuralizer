@@ -106,6 +106,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
         
         if layers < layer_num:
             iteration_l += (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
+            total_iteration -= iteration_l
             pass 
         else:
             if run_once ==0 and not iteration_n > starting_n:
@@ -115,7 +116,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
                 print(f"total_iteration left is {total_iteration}")
                 pass
 
-            else:
+            elif (run_once ==0 and iteration_n > starting_n) or run_once == 1:
                 inner_iterations = (len(units)*len(activation_functions))**layers
                 for inner_iteration in range(inner_iterations):
                     for option_in in options:
