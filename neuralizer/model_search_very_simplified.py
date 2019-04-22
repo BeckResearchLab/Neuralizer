@@ -112,6 +112,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
             while run_once == 0 and iteration_n <= starting_n:
                 iteration_n += 1
                 iteration_l += 1
+                print(iteration_n)
                 total_iteration -= iteration_l
             print(f"total_iteration left is {total_iteration}")
             inner_iterations = (len(units)*len(activation_functions))**layers
