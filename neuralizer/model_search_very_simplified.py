@@ -109,7 +109,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
             total_iteration -= iteration_l
             pass 
         else:
-            while run_once ==0 and not iteration_n > starting_n:
+            while run_once == 0 and iteration_n <= starting_n:
                 iteration_n += 1
                 iteration_l += 1
                 total_iteration -= iteration_l
