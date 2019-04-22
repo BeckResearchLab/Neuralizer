@@ -109,12 +109,6 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
             total_iteration -= iteration_l
             pass 
         else:
-            while run_once == 0 and iteration_n <= starting_n:
-                iteration_n += 1
-                iteration_l += 1
-                print(iteration_n)
-                total_iteration -= iteration_l
-            print(f"total_iteration left is {total_iteration}")
             inner_iterations = (len(units)*len(activation_functions))**layers
             for inner_iteration in range(inner_iterations):
                 for option_in in options:
@@ -122,76 +116,83 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
                     for k in range(layers):
                         inner_list.append(af_combs[inner_iteration][k])
                     for activation_out in activation_functions:
-                    
-                        parameter_list = []
-                        parameter_list.append(option_in)
-                        parameter_list.extend(inner_list)
-                        parameter_list.append(activation_out)
-                        print(f"create input layer with activation of {option_in[0]} and units of {option_in[1]}")
-                        model = keras.Sequential()
-                        model.add(keras.layers.Dense(option_in[1],input_dim = input_dim,activation=option_in[0]))
-                        for i in range(len(inner_list)):
-                            print(f"create hidden layer {i+1} of activation {inner_list[i][0]} and units {inner_list[i][1]}")
-                            model.add(keras.layers.BatchNormalization(momentum=0.9))
-                            model.add(keras.layers.Dense(inner_list[i][1],activation = inner_list[i][0]))
-                        print(f"create output layer with activation of {activation_out} and units of {output_dim}")
-                        model.add(keras.layers.Dense(output_dim,activation=activation_out))
-                        model.compile(loss='mean_squared_error', optimizer='adam',metrics=[R_squared])
-                        earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
-                        collection_folder = './Results/%s_collection%d' % (proj_name,layers)
-                        if not os.path.exists(collection_folder):
-                            os.makedirs(collection_folder)
-                        output_folder = './Results/%s_collection%d/intermediate_output%d'%(proj_name,layers,iteration_n)
-                        if not os.path.exists(output_folder):
-                            os.makedirs(output_folder)
-
-              
-                
-                        if run_once is 0:
-                            file_ini = output_folder+'/weights-'+str(epoch_num)+'*'
-                            filename = glob.glob(file_ini)
-                            print(filename)
-                            if os.path.isfile(filename[0]):
-                                model.load_weights(filename[0])
-                            else:
-                                print("%s does not exists" % (filename[0]))
-
-                
-                    
-                        filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
-                        checkpoint = keras.callbacks.ModelCheckpoint(filepath, monitor='val_R_squared', verbose=1, save_best_only=False, save_weights_only=True, mode='auto', period=10)
-                        callbacks_list = [earlystop,checkpoint]
-                        start = time.time()
-
-                        if run_once is 1:
-                            history = model.fit(X_train,Y_train,epochs=300, batch_size=10,callbacks=callbacks_list,validation_split=0.2,verbose=0)
-                        else:
-                            history = model.fit(X_train,Y_train,epochs=300,batch_size=10,callbacks=callbacks_list,validation_split=0.2,initial_epoch=epoch_num+1,verbose=0)
-
-
-                        end = time.time()
-                        cumulative_time += (end-start)
-                        print('it already took %0.2f seconds' % (cumulative_time))
-                        scores = model.evaluate(X_test,Y_test,verbose=0)
-                        if not os.path.exists("./Results/results%d.txt"%(layers)):
-                            f = open("./Results/results%d.txt"%(layers),"w+")
-                        else:
-                            f = open("./Results/results%d.txt"%(layers),"a+")
-                        f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
-                        if scores[1]>best_R:
-                            best_param = parameter_list
-                            best_R = scores[1]
-                        else:
+                        if run_once ==0 and not iteration_n > starting_n:
+                            iteration_n += 1
+                            iteration_l += 1
+                            total_iteration -= iteration_l
                             pass
-                        f.write("The best_R for now is %0.4f and combination is %s "% (best_R,best_param))
-                        print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layers ,best_R))
-                        run_once = 1
 
-                        iteration_n += 1
-                        x ={"layer_number":layers,"starting_n":iteration_n-1,"best_R":best_R,"best_param":best_param,"cumulative_time":cumulative_time}
-                        print(x)
-                        pr.check_write(x,'latest.json')
-                        print("")
+                        else:
+                            print(f"total iteration left is {total_iteration}")
+                            parameter_list = []
+                            parameter_list.append(option_in)
+                            parameter_list.extend(inner_list)
+                            parameter_list.append(activation_out)
+                            print(f"create input layer with activation of {option_in[0]} and units of {option_in[1]}")
+                            model = keras.Sequential()
+                            model.add(keras.layers.Dense(option_in[1],input_dim = input_dim,activation=option_in[0]))
+                            for i in range(len(inner_list)):
+                                print(f"create hidden layer {i+1} of activation {inner_list[i][0]} and units {inner_list[i][1]}")
+                                model.add(keras.layers.BatchNormalization(momentum=0.9))
+                                model.add(keras.layers.Dense(inner_list[i][1],activation = inner_list[i][0]))
+                            print(f"create output layer with activation of {activation_out} and units of {output_dim}")
+                            model.add(keras.layers.Dense(output_dim,activation=activation_out))
+                            model.compile(loss='mean_squared_error', optimizer='adam',metrics=[R_squared])
+                            earlystop = keras.callbacks.EarlyStopping(monitor='val_R_squared',min_delta=0.0001,patience=20,mode='auto')
+                            collection_folder = './Results/%s_collection%d' % (proj_name,layers)
+                            if not os.path.exists(collection_folder):
+                                os.makedirs(collection_folder)
+                            output_folder = './Results/%s_collection%d/intermediate_output%d'%(proj_name,layers,iteration_n)
+                            if not os.path.exists(output_folder):
+                                os.makedirs(output_folder)
+
+                  
+                    
+                            if run_once is 0:
+                                file_ini = output_folder+'/weights-'+str(epoch_num)+'*'
+                                filename = glob.glob(file_ini)
+                                print(filename)
+                                if os.path.isfile(filename[0]):
+                                    model.load_weights(filename[0])
+                                else:
+                                    print("%s does not exists" % (filename[0]))
+
+                    
+                        
+                            filepath=output_folder+"/weights-{epoch:02d}-{val_R_squared:.2f}.hdf5"
+                            checkpoint = keras.callbacks.ModelCheckpoint(filepath, monitor='val_R_squared', verbose=1, save_best_only=False, save_weights_only=True, mode='auto', period=10)
+                            callbacks_list = [earlystop,checkpoint]
+                            start = time.time()
+
+                            if run_once is 1:
+                                history = model.fit(X_train,Y_train,epochs=300, batch_size=10,callbacks=callbacks_list,validation_split=0.2,verbose=0)
+                            else:
+                                history = model.fit(X_train,Y_train,epochs=300,batch_size=10,callbacks=callbacks_list,validation_split=0.2,initial_epoch=epoch_num+1,verbose=0)
+
+
+                            end = time.time()
+                            cumulative_time += (end-start)
+                            print('it already took %0.2f seconds' % (cumulative_time))
+                            scores = model.evaluate(X_test,Y_test,verbose=0)
+                            if not os.path.exists("./Results/results%d.txt"%(layers)):
+                                f = open("./Results/results%d.txt"%(layers),"w+")
+                            else:
+                                f = open("./Results/results%d.txt"%(layers),"a+")
+                            f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
+                            if scores[1]>best_R:
+                                best_param = parameter_list
+                                best_R = scores[1]
+                            else:
+                                pass
+                            f.write("The best_R for now is %0.4f and combination is %s "% (best_R,best_param))
+                            print("best R for the combination %s with %d hidden layer is %0.4f" % (best_param,layers ,best_R))
+                            run_once = 1
+
+                            iteration_n += 1
+                            x ={"layer_number":layers,"starting_n":iteration_n-1,"best_R":best_R,"best_param":best_param,"cumulative_time":cumulative_time}
+                            print(x)
+                            pr.check_write(x,'latest.json')
+                            print("")
 
             best_list.append(best_param)
             best_R_list.append(best_R)
