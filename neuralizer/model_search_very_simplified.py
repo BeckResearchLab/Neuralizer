@@ -105,7 +105,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
 
         
         if layers < layer_num:
-            iteration_l += (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
+            iteration_l += (len(units)*len(activation_functions))**(layers)*len(activation_functions)
             total_iteration -= iteration_l
             pass 
         else:
