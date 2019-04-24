@@ -175,9 +175,9 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
                             print('it already took %0.2f seconds' % (cumulative_time))
                             scores = model.evaluate(X_test,Y_test,verbose=0)
                             if not os.path.exists("./Results/results%d.txt"%(layers)):
-                                f = open("./Results/results%d.txt"%(layers),"w+")
+                                f = open("./Results/%s_results%d.txt"%(proj_name,layers),"w+")
                             else:
-                                f = open("./Results/results%d.txt"%(layers),"a+")
+                                f = open("./Results/%s_results%d.txt"%(proj_name,layers),"a+")
                             f.write("For this combination %s, R is %0.2f\r\n" %(parameter_list,scores[1]))
                             if scores[1]>best_R:
                                 best_param = parameter_list
@@ -197,7 +197,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
             best_list.append(best_param)
             best_R_list.append(best_R)
             updated_list = {"best_list":best_list,"best_R_list":best_R_list}
-            pr.check_write(updated_list,"list.json")
+            pr.check_write(updated_list,"list_%s.json") %(proj_name)
             restart = False
     max_R = best_R_list[0]
     max_param = best_list[0]
