@@ -1,0 +1,14 @@
+For this combination [['tanh', 5], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.6383 and combination is [['tanh', 5], ['tanh', 5], 'tanh'] For this combination [['tanh', 10], ['tanh', 5], 'tanh'], R is 0.71
+The best_R for now is 0.8952 and combination is [['tanh', 5], ['tanh', 5], 'linear'] For this combination [['tanh', 10], ['tanh', 5], 'linear'], R is 0.92
+The best_R for now is 0.9246 and combination is [['tanh', 10], ['tanh', 5], 'linear'] For this combination [['tanh', 18], ['tanh', 5], 'tanh'], R is 0.71
+The best_R for now is 0.9246 and combination is [['tanh', 10], ['tanh', 5], 'linear'] For this combination [['tanh', 18], ['tanh', 5], 'linear'], R is 0.95
+The best_R for now is 0.9545 and combination is [['tanh', 18], ['tanh', 5], 'linear'] For this combination [['linear', 5], ['tanh', 5], 'tanh'], R is 0.63
+The best_R for now is 0.9545 and combination is [['tanh', 18], ['tanh', 5], 'linear'] For this combination [['linear', 5], ['tanh', 5], 'linear'], R is 0.73
+The best_R for now is 0.9545 and combination is [['tanh', 18], ['tanh', 5], 'linear'] For this combination [['linear', 10], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9545 and combination is [['tanh', 18], ['tanh', 5], 'linear'] For this combination [['linear', 10], ['tanh', 5], 'linear'], R is 0.78
+The best_R for now is 0.9545 and combination is [['tanh', 18], ['tanh', 5], 'linear'] For this combination [['linear', 18], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.9545 and combination is [['tanh', 18], ['tanh', 5], 'linear'] For this combination [['linear', 18], ['tanh', 5], 'linear'], R is 0.86
+The best_R for now is 0.9545 and combination is [['tanh', 18], ['tanh', 5], 'linear'] For this combination [['tanh', 5], ['tanh', 10], 'tanh'], R is 0.69
+The best_R for now is 0.9545 and combination is [['tanh', 18], ['tanh', 5], 'linear'] For this combination [['tanh', 5], ['tanh', 5], 'linear'], R is 0.90
+The best_R for now is 0.8952 and combination is [['tanh', 5], ['tanh', 5], 'linear'] 
