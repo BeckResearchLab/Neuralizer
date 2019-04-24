@@ -66,7 +66,8 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
     units = params["units"]
     hidden_layers = params["hidden_layers"]
 
-    if os.path.exists("./%s_list.json")%(proj_name):
+    
+    if os.path.exists("./%s_list.json"%(proj_name)):
         y2 = pr.check_read("%s_list.json")%(proj_name)
         best_list = y2["best_list"]
         best_R_list = y2["best_R_list"]
@@ -174,7 +175,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
                             cumulative_time += (end-start)
                             print('it already took %0.2f seconds' % (cumulative_time))
                             scores = model.evaluate(X_test,Y_test,verbose=0)
-                            if not os.path.exists("./Results/results%d.txt"%(layers)):
+                            if not os.path.exists("./Results/%s_results%d.txt"%(proj_name,layers)):
                                 f = open("./Results/%s_results%d.txt"%(proj_name,layers),"w+")
                             else:
                                 f = open("./Results/%s_results%d.txt"%(proj_name,layers),"a+")
