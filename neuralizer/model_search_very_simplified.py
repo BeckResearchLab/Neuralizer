@@ -66,8 +66,8 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
     units = params["units"]
     hidden_layers = params["hidden_layers"]
 
-    if os.path.exists("./list.json"):
-        y2 = pr.check_read("list.json")
+    if os.path.exists("./%s_list.json")%(proj_name):
+        y2 = pr.check_read("%s_list.json")%(proj_name)
         best_list = y2["best_list"]
         best_R_list = y2["best_R_list"]
     else:
@@ -84,7 +84,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
         options= make_combo(option1=activation_functions,option2=units)
         af_combs = make_pairwise_list(max_depth=layers, options=options)
         if restart:
-            y1 = pr.check_read("latest.json")
+            y1 = pr.check_read("%s_latest.json")%(proj_name)
             starting_n = y1["starting_n"]
             print(y1)
             best_R = y1["best_R"]
@@ -191,7 +191,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
                             iteration_n += 1
                             x ={"layer_number":layers,"starting_n":iteration_n-1,"best_R":best_R,"best_param":best_param,"cumulative_time":cumulative_time}
                             print(x)
-                            pr.check_write(x,'latest.json')
+                            pr.check_write(x,'%s_latest.json')%(proj_name)
                             print("")
 
             best_list.append(best_param)
