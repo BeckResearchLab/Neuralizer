@@ -1,0 +1,3 @@
+For this combination [['tanh', 5], ['tanh', 5], 'tanh'], R is 0.64
+The best_R for now is 0.6428 and combination is [['tanh', 5], ['tanh', 5], 'tanh'] For this combination [['tanh', 5], ['tanh', 5], 'linear'], R is 0.89
+The best_R for now is 0.8897 and combination is [['tanh', 5], ['tanh', 5], 'linear'] 

@@ -1,1 +1,1 @@
-{"best_list": [[["tanh", 18], ["linear", 18], ["tanh", 18], "linear"], [["tanh", 18], ["linear", 18], ["tanh", 18], "linear"], [["tanh", 18], ["tanh", 10], "linear"]], "best_R_list": [0.9621795968821547, 0.9621795968821547, 0.9647740436063479]}
+{"best_list": [[["tanh", 18], ["linear", 18], ["tanh", 18], "linear"], [["tanh", 18], ["linear", 18], ["tanh", 18], "linear"], [["tanh", 18], ["tanh", 10], "linear"], [["tanh", 5], ["linear", 18], "tanh"]], "best_R_list": [0.9621795968821547, 0.9621795968821547, 0.9647740436063479, 0.3402285099029541]}
