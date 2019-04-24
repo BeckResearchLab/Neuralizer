@@ -192,13 +192,13 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
                             iteration_n += 1
                             x ={"layer_number":layers,"starting_n":iteration_n-1,"best_R":best_R,"best_param":best_param,"cumulative_time":cumulative_time}
                             print(x)
-                            pr.check_write(x,'%s_latest.json')%(proj_name)
+                            pr.check_write(x,'%s_latest.json'%(proj_name))
                             print("")
 
             best_list.append(best_param)
             best_R_list.append(best_R)
             updated_list = {"best_list":best_list,"best_R_list":best_R_list}
-            pr.check_write(updated_list,"list_%s.json") %(proj_name)
+            pr.check_write(updated_list,"list_%s.json"%(proj_name)) 
             restart = False
     max_R = best_R_list[0]
     max_param = best_list[0]
