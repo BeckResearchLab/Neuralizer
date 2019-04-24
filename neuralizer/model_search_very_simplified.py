@@ -91,7 +91,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
             best_param = y1["best_param"]
             cumulative_time = y1["cumulative_time"]
             layer_num = y1["layer_number"]
-            epoch_num = pr.get_epoch_num(layer_num)
+            epoch_num = pr.get_epoch_num(layer_num)-10
             run_once = 0
         else:
             best_param = []
