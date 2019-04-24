@@ -85,7 +85,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
         options= make_combo(option1=activation_functions,option2=units)
         af_combs = make_pairwise_list(max_depth=layers, options=options)
         if restart:
-            y1 = pr.check_read("%s_latest.json")%(proj_name)
+            y1 = pr.check_read("%s_latest.json"%(proj_name))
             starting_n = y1["starting_n"]
             print(y1)
             best_R = y1["best_R"]
