@@ -86,13 +86,13 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
         af_combs = make_pairwise_list(max_depth=layers, options=options)
         if restart:
             y1 = pr.check_read("%s_latest.json"%(proj_name))
-            starting_n = y1["starting_n"]
+            starting_n = y1["starting_n"]-1
             print(y1)
             best_R = y1["best_R"]
             best_param = y1["best_param"]
             cumulative_time = y1["cumulative_time"]
             layer_num = y1["layer_number"]
-            epoch_num = pr.get_epoch_num(layer_num) - 10
+            epoch_num = pr.get_epoch_num(layer_num)
             run_once = 0
         else:
             best_param = []
@@ -152,9 +152,8 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
                             if run_once is 0:
                                 file_ini = output_folder+'/weights-'+str(epoch_num)+'*'
                                 filename = glob.glob(file_ini)
-                                if len(filename) == 0:
-                                    iteration_n -= 1
-                                    output_folder = './Results/%s_collection%d/intermediate_output%d'%(proj_name,layers,iteration_n)
+                                while len(filename) == 0:
+                                    epoch_num -= 10
                                     file_ini = output_folder+'/weights-'+str(epoch_num)+'*'
                                     filename = glob.glob(file_ini)
                                 print(filename)
