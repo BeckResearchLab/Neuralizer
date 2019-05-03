@@ -75,13 +75,13 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
         best_list = []
         best_R_list = []
     
+    iteration_l = 0
     total_iteration = 0
     for i in hidden_layers:
         total_iteration += (len(units)*len(activation_functions))**(i+1)*len(activation_functions)
 
     for layers in hidden_layers:
         iteration_n = 1
-        iteration_l = 0
         options= make_combo(option1=activation_functions,option2=units)
         af_combs = make_pairwise_list(max_depth=layers, options=options)
         if restart:
@@ -106,7 +106,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
 
         
         if layers < layer_num:
-            iteration_l += (len(units)*len(activation_functions))**(layers)*len(activation_functions)
+            iteration_l += (len(units)*len(activation_functions))**(layers+1)*len(activation_functions)
             total_iteration -= iteration_l
             pass 
         else:
@@ -194,6 +194,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
                             run_once = 1
 
                             iteration_n += 1
+                            total_iteration -= 1
                             x ={"layer_number":layers,"starting_n":iteration_n-1,"best_R":best_R,"best_param":best_param,"cumulative_time":cumulative_time}
                             print(x)
                             pr.check_write(x,'%s_latest.json'%(proj_name))
