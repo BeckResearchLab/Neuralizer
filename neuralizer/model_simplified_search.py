@@ -121,8 +121,7 @@ def model_search(data,test_fraction,random_state,params,cumulative_time = 0.0,re
                     for activation_out in activation_functions:
                         if run_once ==0 and not iteration_n > starting_n:
                             iteration_n += 1
-                            iteration_l += 1
-                            total_iteration -= iteration_l
+                            total_iteration -= 1
                             pass
 
                         else:
