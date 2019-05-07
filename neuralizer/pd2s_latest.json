@@ -1,1 +1,1 @@
-{"layer_number": 2, "starting_n": 292, "best_R": 0.29465221405029296, "best_param": [["linear", 100], ["tanh", 18], ["relu", 50], "tanh"], "cumulative_time": 45733.0949382782}
+{"layer_number": 2, "starting_n": 1544, "best_R": 0.2966370825767517, "best_param": [["tanh", 50], ["linear", 50], ["relu", 100], "linear"], "cumulative_time": 1113507.538911581}
