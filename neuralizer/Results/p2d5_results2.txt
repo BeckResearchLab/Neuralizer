@@ -1,0 +1,6 @@
+For this combination [['linear', 100], ['linear', 100], ['linear', 100], 'linear'], R is 0.01
+The best_R for now is 0.0090 and combination is [['linear', 100], ['linear', 100], ['linear', 100], 'linear'] For this combination [['linear', 100], ['linear', 100], ['linear', 100], 'tanh'], R is 0.21
+The best_R for now is 0.2137 and combination is [['linear', 100], ['linear', 100], ['linear', 100], 'tanh'] For this combination [['linear', 100], ['linear', 100], ['linear', 100], 'linear'], R is 0.12
+The best_R for now is 0.1223 and combination is [['linear', 100], ['linear', 100], ['linear', 100], 'linear'] For this combination [['linear', 100], ['linear', 100], ['linear', 100], 'tanh'], R is 0.20
+The best_R for now is 0.1986 and combination is [['linear', 100], ['linear', 100], ['linear', 100], 'tanh'] For this combination [['linear', 100], ['linear', 100], ['linear', 100], 'relu'], R is -0.07
+The best_R for now is 0.2137 and combination is [['linear', 100], ['linear', 100], ['linear', 100], 'tanh'] 

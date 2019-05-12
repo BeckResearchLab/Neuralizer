@@ -1,0 +1,1 @@
+{"layer_number": 2, "starting_n": 999, "best_R": 0.3249979395866394, "best_param": [["softplus", 100], ["tanh", 100], ["softmax", 100], "elu"], "cumulative_time": 69576.42040777206}
